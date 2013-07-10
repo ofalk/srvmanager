@@ -1,0 +1,19 @@
+This page was generated from the template "templates/example/welcome.html.tt".
+<a href="[% h.url_for %]">click here</a> to reload the page or
+<a href="/index.html">here</a> to move forward to a static page.
+
+<!--
+	<div class="debug">
+		<h1>c hash</h1>
+		<pre>
+			[% h.dumper(c) %]
+		</pre>
+	</div>
+
+	<div class="debug">
+		<h1>h hash</h1>
+		<pre>
+			[% h.dumper(h) %]
+		</pre>
+	</div>
+-->

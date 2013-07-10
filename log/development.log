@@ -1,0 +1,596 @@
+[Tue Jul  9 16:35:07 2013] [info] Listening at "http://*:3000".
+[Tue Jul  9 16:35:30 2013] [debug] Your secret passphrase needs to be changed!!!
+[Tue Jul  9 16:35:30 2013] [debug] GET "/catsupportlevel".
+[Tue Jul  9 16:35:30 2013] [debug] Template "not_found.development.html.ep" not found.
+[Tue Jul  9 16:35:30 2013] [debug] Template "not_found.html.ep" not found.
+[Tue Jul  9 16:35:30 2013] [debug] Rendering inline template.
+[Tue Jul  9 16:35:30 2013] [debug] Rendering inline template.
+[Tue Jul  9 16:35:30 2013] [debug] 404 Not Found (0.019868s, 50.332/s).
+[Tue Jul  9 16:35:38 2013] [debug] GET "/".
+[Tue Jul  9 16:35:38 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 16:35:38 2013] [debug] Rendering template "example/welcome.html.ep".
+[Tue Jul  9 16:35:38 2013] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jul  9 16:35:38 2013] [debug] 200 OK (0.007103s, 140.786/s).
+[Tue Jul  9 16:35:40 2013] [debug] GET "/".
+[Tue Jul  9 16:35:40 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 16:35:40 2013] [debug] Rendering cached template "example/welcome.html.ep".
+[Tue Jul  9 16:35:40 2013] [debug] Rendering cached template "layouts/default.html.ep".
+[Tue Jul  9 16:35:40 2013] [debug] 200 OK (0.001627s, 614.628/s).
+[Tue Jul  9 16:35:42 2013] [debug] GET "/".
+[Tue Jul  9 16:35:42 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 16:35:42 2013] [debug] Rendering cached template "example/welcome.html.ep".
+[Tue Jul  9 16:35:42 2013] [debug] Rendering cached template "layouts/default.html.ep".
+[Tue Jul  9 16:35:42 2013] [debug] 200 OK (0.001454s, 687.758/s).
+[Tue Jul  9 16:35:52 2013] [debug] GET "/".
+[Tue Jul  9 16:35:52 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 16:35:52 2013] [debug] Rendering cached template "example/welcome.html.ep".
+[Tue Jul  9 16:35:52 2013] [debug] Rendering cached template "layouts/default.html.ep".
+[Tue Jul  9 16:35:52 2013] [debug] 200 OK (0.002009s, 497.760/s).
+[Tue Jul  9 16:36:30 2013] [info] Listening at "http://*:3000".
+[Tue Jul  9 17:04:41 2013] [info] Listening at "http://*:3000".
+[Tue Jul  9 17:05:29 2013] [info] Listening at "http://*:3000".
+[Tue Jul  9 17:05:54 2013] [debug] Your secret passphrase needs to be changed!!!
+[Tue Jul  9 17:05:54 2013] [debug] GET "/".
+[Tue Jul  9 17:05:54 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:05:54 2013] [debug] Rendering template "example/welcome.html.ep".
+[Tue Jul  9 17:05:54 2013] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jul  9 17:05:54 2013] [debug] 200 OK (0.008938s, 111.882/s).
+[Tue Jul  9 17:05:57 2013] [debug] GET "/".
+[Tue Jul  9 17:05:57 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:05:57 2013] [debug] Rendering cached template "example/welcome.html.ep".
+[Tue Jul  9 17:05:57 2013] [debug] Rendering cached template "layouts/default.html.ep".
+[Tue Jul  9 17:05:57 2013] [debug] 200 OK (0.001981s, 504.796/s).
+[Tue Jul  9 17:06:06 2013] [debug] GET "/dbviewer/".
+[Tue Jul  9 17:09:05 2013] [info] Listening at "http://*:3000".
+[Tue Jul  9 17:09:10 2013] [debug] Your secret passphrase needs to be changed!!!
+[Tue Jul  9 17:09:10 2013] [debug] GET "/dbviewer/".
+[Tue Jul  9 17:09:10 2013] [debug] Routing to a callback.
+[Tue Jul  9 17:10:48 2013] [info] Listening at "http://*:3000".
+[Tue Jul  9 17:10:52 2013] [debug] Your secret passphrase needs to be changed!!!
+[Tue Jul  9 17:10:52 2013] [debug] GET "/dbviewer/".
+[Tue Jul  9 17:10:52 2013] [debug] Routing to a callback.
+[Tue Jul  9 17:10:52 2013] [debug] Rendering template "/dbviewer/auto/index.html.ep".
+[Tue Jul  9 17:10:52 2013] [debug] Rendering template "layouts/dbviewer_common.html.ep".
+[Tue Jul  9 17:10:52 2013] [debug] 200 OK (0.258090s, 3.875/s).
+[Tue Jul  9 17:11:07 2013] [debug] GET "/".
+[Tue Jul  9 17:11:07 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:11:07 2013] [debug] Rendering template "example/welcome.html.ep".
+[Tue Jul  9 17:11:07 2013] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jul  9 17:11:07 2013] [debug] 200 OK (0.015185s, 65.854/s).
+[Tue Jul  9 17:11:34 2013] [debug] GET "/perldoc/".
+[Tue Jul  9 17:11:34 2013] [debug] Routing to a callback.
+[Tue Jul  9 17:11:34 2013] [debug] Rendering inline template.
+[Tue Jul  9 17:11:34 2013] [debug] Rendering inline template.
+[Tue Jul  9 17:11:34 2013] [debug] 200 OK (0.071630s, 13.961/s).
+[Tue Jul  9 17:11:37 2013] [debug] GET "/webdbviewer-favicon.png".
+[Tue Jul  9 17:11:37 2013] [debug] Template "not_found.development.html.ep" not found.
+[Tue Jul  9 17:11:37 2013] [debug] Template "not_found.html.ep" not found.
+[Tue Jul  9 17:11:37 2013] [debug] Rendering inline template.
+[Tue Jul  9 17:11:37 2013] [debug] Rendering inline template.
+[Tue Jul  9 17:11:37 2013] [debug] 404 Not Found (0.018583s, 53.813/s).
+[Tue Jul  9 17:11:44 2013] [debug] GET "/dbviewer/tables".
+[Tue Jul  9 17:11:44 2013] [debug] Routing to a callback.
+[Tue Jul  9 17:11:44 2013] [debug] Rendering template "/dbviewer/auto/tables.html.ep".
+[Tue Jul  9 17:11:44 2013] [debug] Rendering template "/dbviewer/navi.html.ep".
+[Tue Jul  9 17:11:44 2013] [debug] Rendering template "layouts/dbviewer_common.html.ep".
+[Tue Jul  9 17:11:44 2013] [debug] 200 OK (0.052663s, 18.989/s).
+[Tue Jul  9 17:11:47 2013] [debug] GET "/dbviewer/table".
+[Tue Jul  9 17:11:47 2013] [debug] Routing to a callback.
+[Tue Jul  9 17:11:47 2013] [debug] Rendering template "/dbviewer/auto/table.html.ep".
+[Tue Jul  9 17:11:47 2013] [debug] Rendering template "/dbviewer/navi.html.ep".
+[Tue Jul  9 17:11:47 2013] [debug] Rendering template "layouts/dbviewer_common.html.ep".
+[Tue Jul  9 17:11:47 2013] [debug] 200 OK (0.021529s, 46.449/s).
+[Tue Jul  9 17:11:49 2013] [debug] GET "/dbviewer/select".
+[Tue Jul  9 17:11:49 2013] [debug] Routing to a callback.
+[Tue Jul  9 17:11:49 2013] [debug] Rendering template "/dbviewer/auto/select.html.ep".
+[Tue Jul  9 17:11:49 2013] [debug] Rendering template "/dbviewer/navi.html.ep".
+[Tue Jul  9 17:11:49 2013] [debug] Rendering template "layouts/dbviewer_common.html.ep".
+[Tue Jul  9 17:11:49 2013] [debug] 200 OK (0.045420s, 22.017/s).
+[Tue Jul  9 17:12:05 2013] [debug] GET "/dbviewer/tables".
+[Tue Jul  9 17:12:05 2013] [debug] Routing to a callback.
+[Tue Jul  9 17:12:05 2013] [debug] Rendering cached template "/dbviewer/auto/tables.html.ep".
+[Tue Jul  9 17:12:05 2013] [debug] Rendering cached template "/dbviewer/navi.html.ep".
+[Tue Jul  9 17:12:05 2013] [debug] Rendering cached template "layouts/dbviewer_common.html.ep".
+[Tue Jul  9 17:12:05 2013] [debug] 200 OK (0.017539s, 57.016/s).
+[Tue Jul  9 17:12:07 2013] [debug] GET "/dbviewer/table".
+[Tue Jul  9 17:12:07 2013] [debug] Routing to a callback.
+[Tue Jul  9 17:12:07 2013] [debug] Rendering cached template "/dbviewer/auto/table.html.ep".
+[Tue Jul  9 17:12:07 2013] [debug] Rendering cached template "/dbviewer/navi.html.ep".
+[Tue Jul  9 17:12:07 2013] [debug] Rendering cached template "layouts/dbviewer_common.html.ep".
+[Tue Jul  9 17:12:07 2013] [debug] 200 OK (0.007343s, 136.184/s).
+[Tue Jul  9 17:12:13 2013] [debug] GET "/dbviewer/tables".
+[Tue Jul  9 17:12:13 2013] [debug] Routing to a callback.
+[Tue Jul  9 17:12:13 2013] [debug] Rendering cached template "/dbviewer/auto/tables.html.ep".
+[Tue Jul  9 17:12:13 2013] [debug] Rendering cached template "/dbviewer/navi.html.ep".
+[Tue Jul  9 17:12:13 2013] [debug] Rendering cached template "layouts/dbviewer_common.html.ep".
+[Tue Jul  9 17:12:13 2013] [debug] 200 OK (0.016844s, 59.368/s).
+[Tue Jul  9 17:12:19 2013] [debug] GET "/dbviewer/null-allowed-columns".
+[Tue Jul  9 17:12:19 2013] [debug] Routing to a callback.
+[Tue Jul  9 17:12:19 2013] [debug] Rendering template "/dbviewer/auto/null-allowed-columns.html.ep".
+[Tue Jul  9 17:12:19 2013] [debug] Rendering cached template "/dbviewer/navi.html.ep".
+[Tue Jul  9 17:12:19 2013] [debug] Rendering cached template "layouts/dbviewer_common.html.ep".
+[Tue Jul  9 17:12:19 2013] [debug] 200 OK (0.063605s, 15.722/s).
+[Tue Jul  9 17:12:36 2013] [debug] GET "/dbviewer/table".
+[Tue Jul  9 17:12:36 2013] [debug] Routing to a callback.
+[Tue Jul  9 17:12:36 2013] [debug] Rendering cached template "/dbviewer/auto/table.html.ep".
+[Tue Jul  9 17:12:36 2013] [debug] Rendering cached template "/dbviewer/navi.html.ep".
+[Tue Jul  9 17:12:36 2013] [debug] Rendering cached template "layouts/dbviewer_common.html.ep".
+[Tue Jul  9 17:12:36 2013] [debug] 200 OK (0.008152s, 122.669/s).
+[Tue Jul  9 17:12:41 2013] [debug] GET "/dbviewer/tables".
+[Tue Jul  9 17:12:41 2013] [debug] Routing to a callback.
+[Tue Jul  9 17:12:41 2013] [debug] Rendering cached template "/dbviewer/auto/tables.html.ep".
+[Tue Jul  9 17:12:41 2013] [debug] Rendering cached template "/dbviewer/navi.html.ep".
+[Tue Jul  9 17:12:41 2013] [debug] Rendering cached template "layouts/dbviewer_common.html.ep".
+[Tue Jul  9 17:12:41 2013] [debug] 200 OK (0.017308s, 57.777/s).
+[Tue Jul  9 17:12:42 2013] [debug] GET "/dbviewer".
+[Tue Jul  9 17:12:42 2013] [debug] Routing to a callback.
+[Tue Jul  9 17:12:42 2013] [debug] Rendering cached template "/dbviewer/auto/index.html.ep".
+[Tue Jul  9 17:12:42 2013] [debug] Rendering cached template "layouts/dbviewer_common.html.ep".
+[Tue Jul  9 17:12:42 2013] [debug] 200 OK (0.007639s, 130.907/s).
+[Tue Jul  9 17:12:44 2013] [debug] GET "/dbviewer/tables".
+[Tue Jul  9 17:12:44 2013] [debug] Routing to a callback.
+[Tue Jul  9 17:12:44 2013] [debug] Rendering cached template "/dbviewer/auto/tables.html.ep".
+[Tue Jul  9 17:12:44 2013] [debug] Rendering cached template "/dbviewer/navi.html.ep".
+[Tue Jul  9 17:12:44 2013] [debug] Rendering cached template "layouts/dbviewer_common.html.ep".
+[Tue Jul  9 17:12:44 2013] [debug] 200 OK (0.020094s, 49.766/s).
+[Tue Jul  9 17:12:48 2013] [debug] GET "/dbviewer/table".
+[Tue Jul  9 17:12:48 2013] [debug] Routing to a callback.
+[Tue Jul  9 17:12:48 2013] [debug] Rendering cached template "/dbviewer/auto/table.html.ep".
+[Tue Jul  9 17:12:48 2013] [debug] Rendering cached template "/dbviewer/navi.html.ep".
+[Tue Jul  9 17:12:48 2013] [debug] Rendering cached template "layouts/dbviewer_common.html.ep".
+[Tue Jul  9 17:12:48 2013] [debug] 200 OK (0.007829s, 127.730/s).
+[Tue Jul  9 17:12:50 2013] [debug] GET "/dbviewer".
+[Tue Jul  9 17:12:50 2013] [debug] Routing to a callback.
+[Tue Jul  9 17:12:50 2013] [debug] Rendering cached template "/dbviewer/auto/index.html.ep".
+[Tue Jul  9 17:12:50 2013] [debug] Rendering cached template "layouts/dbviewer_common.html.ep".
+[Tue Jul  9 17:12:50 2013] [debug] 200 OK (0.007124s, 140.371/s).
+[Tue Jul  9 17:12:52 2013] [debug] GET "/dbviewer/tables".
+[Tue Jul  9 17:12:52 2013] [debug] Routing to a callback.
+[Tue Jul  9 17:12:52 2013] [debug] Rendering cached template "/dbviewer/auto/tables.html.ep".
+[Tue Jul  9 17:12:52 2013] [debug] Rendering cached template "/dbviewer/navi.html.ep".
+[Tue Jul  9 17:12:52 2013] [debug] Rendering cached template "layouts/dbviewer_common.html.ep".
+[Tue Jul  9 17:12:52 2013] [debug] 200 OK (0.017616s, 56.767/s).
+[Tue Jul  9 17:12:56 2013] [debug] GET "/dbviewer".
+[Tue Jul  9 17:12:56 2013] [debug] Routing to a callback.
+[Tue Jul  9 17:12:56 2013] [debug] Rendering cached template "/dbviewer/auto/index.html.ep".
+[Tue Jul  9 17:12:56 2013] [debug] Rendering cached template "layouts/dbviewer_common.html.ep".
+[Tue Jul  9 17:12:56 2013] [debug] 200 OK (0.007458s, 134.084/s).
+[Tue Jul  9 17:12:57 2013] [debug] GET "/dbviewer/tables".
+[Tue Jul  9 17:12:57 2013] [debug] Routing to a callback.
+[Tue Jul  9 17:12:57 2013] [debug] Rendering cached template "/dbviewer/auto/tables.html.ep".
+[Tue Jul  9 17:12:57 2013] [debug] Rendering cached template "/dbviewer/navi.html.ep".
+[Tue Jul  9 17:12:57 2013] [debug] Rendering cached template "layouts/dbviewer_common.html.ep".
+[Tue Jul  9 17:12:57 2013] [debug] 200 OK (0.017020s, 58.754/s).
+[Tue Jul  9 17:13:03 2013] [debug] GET "/dbviewer/table".
+[Tue Jul  9 17:13:03 2013] [debug] Routing to a callback.
+[Tue Jul  9 17:13:03 2013] [debug] Rendering cached template "/dbviewer/auto/table.html.ep".
+[Tue Jul  9 17:13:03 2013] [debug] Rendering cached template "/dbviewer/navi.html.ep".
+[Tue Jul  9 17:13:03 2013] [debug] Rendering cached template "layouts/dbviewer_common.html.ep".
+[Tue Jul  9 17:13:03 2013] [debug] 200 OK (0.007883s, 126.855/s).
+[Tue Jul  9 17:13:05 2013] [debug] GET "/dbviewer/select".
+[Tue Jul  9 17:13:05 2013] [debug] Routing to a callback.
+[Tue Jul  9 17:13:05 2013] [debug] Rendering cached template "/dbviewer/auto/select.html.ep".
+[Tue Jul  9 17:13:05 2013] [debug] Rendering cached template "/dbviewer/navi.html.ep".
+[Tue Jul  9 17:13:05 2013] [debug] Rendering cached template "layouts/dbviewer_common.html.ep".
+[Tue Jul  9 17:13:05 2013] [debug] 200 OK (0.015133s, 66.081/s).
+[Tue Jul  9 17:13:15 2013] [debug] GET "/dbviewer/tables".
+[Tue Jul  9 17:13:15 2013] [debug] Routing to a callback.
+[Tue Jul  9 17:13:15 2013] [debug] Rendering cached template "/dbviewer/auto/tables.html.ep".
+[Tue Jul  9 17:13:16 2013] [debug] Rendering cached template "/dbviewer/navi.html.ep".
+[Tue Jul  9 17:13:16 2013] [debug] Rendering cached template "layouts/dbviewer_common.html.ep".
+[Tue Jul  9 17:13:16 2013] [debug] 200 OK (0.016939s, 59.035/s).
+[Tue Jul  9 17:20:16 2013] [info] Listening at "http://*:3000".
+[Tue Jul  9 17:20:18 2013] [debug] Your secret passphrase needs to be changed!!!
+[Tue Jul  9 17:20:18 2013] [debug] GET "/dbviewer/tables".
+[Tue Jul  9 17:20:18 2013] [debug] Routing to a callback.
+[Tue Jul  9 17:20:18 2013] [debug] Rendering template "/dbviewer/auto/tables.html.ep".
+[Tue Jul  9 17:20:18 2013] [debug] Rendering template "/dbviewer/navi.html.ep".
+[Tue Jul  9 17:20:18 2013] [debug] Rendering template "layouts/dbviewer_common.html.ep".
+[Tue Jul  9 17:20:18 2013] [debug] 200 OK (0.031962s, 31.287/s).
+[Tue Jul  9 17:20:23 2013] [debug] GET "/".
+[Tue Jul  9 17:20:23 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:20:23 2013] [debug] Rendering template "example/welcome.html.ep".
+[Tue Jul  9 17:20:23 2013] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jul  9 17:20:23 2013] [debug] 200 OK (0.006940s, 144.092/s).
+[Tue Jul  9 17:20:46 2013] [info] Listening at "http://*:3000".
+[Tue Jul  9 17:20:50 2013] [debug] Your secret passphrase needs to be changed!!!
+[Tue Jul  9 17:20:50 2013] [debug] GET "/".
+[Tue Jul  9 17:20:50 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:20:50 2013] [debug] Rendering template "example/welcome.html.ep".
+[Tue Jul  9 17:20:50 2013] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jul  9 17:20:50 2013] [debug] 200 OK (0.013388s, 74.694/s).
+[Tue Jul  9 17:20:55 2013] [debug] GET "/".
+[Tue Jul  9 17:20:55 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:20:55 2013] [debug] Rendering cached template "example/welcome.html.ep".
+[Tue Jul  9 17:20:55 2013] [debug] Rendering cached template "layouts/default.html.ep".
+[Tue Jul  9 17:20:55 2013] [debug] 200 OK (0.002899s, 344.947/s).
+[Tue Jul  9 17:20:55 2013] [debug] GET "/".
+[Tue Jul  9 17:20:55 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:20:55 2013] [debug] Rendering cached template "example/welcome.html.ep".
+[Tue Jul  9 17:20:55 2013] [debug] Rendering cached template "layouts/default.html.ep".
+[Tue Jul  9 17:20:55 2013] [debug] 200 OK (0.015145s, 66.028/s).
+[Tue Jul  9 17:20:58 2013] [info] Listening at "http://*:3000".
+[Tue Jul  9 17:21:55 2013] [info] Listening at "http://*:3000".
+[Tue Jul  9 17:22:00 2013] [debug] Your secret passphrase needs to be changed!!!
+[Tue Jul  9 17:22:00 2013] [debug] GET "/".
+[Tue Jul  9 17:22:00 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:22:00 2013] [debug] Rendering template "example/welcome.html.ep".
+[Tue Jul  9 17:22:00 2013] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jul  9 17:22:00 2013] [debug] 200 OK (0.009878s, 101.235/s).
+[Tue Jul  9 17:23:55 2013] [info] Listening at "http://*:3000".
+[Tue Jul  9 17:23:58 2013] [debug] Your secret passphrase needs to be changed!!!
+[Tue Jul  9 17:23:58 2013] [debug] GET "/".
+[Tue Jul  9 17:23:58 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:23:58 2013] [debug] Rendering template "example/welcome.html.ep".
+[Tue Jul  9 17:23:58 2013] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jul  9 17:23:58 2013] [debug] 200 OK (0.009842s, 101.605/s).
+[Tue Jul  9 17:27:56 2013] [info] Listening at "http://*:3000".
+[Tue Jul  9 17:27:59 2013] [debug] Your secret passphrase needs to be changed!!!
+[Tue Jul  9 17:27:59 2013] [debug] GET "/".
+[Tue Jul  9 17:27:59 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:27:59 2013] [debug] Rendering template "example/welcome.html.ep".
+[Tue Jul  9 17:27:59 2013] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jul  9 17:27:59 2013] [debug] 200 OK (0.009961s, 100.392/s).
+[Tue Jul  9 17:29:37 2013] [debug] GET "/".
+[Tue Jul  9 17:29:37 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:29:37 2013] [debug] Rendering cached template "example/welcome.html.ep".
+[Tue Jul  9 17:29:37 2013] [debug] Rendering cached template "layouts/default.html.ep".
+[Tue Jul  9 17:29:37 2013] [debug] 200 OK (0.002402s, 416.320/s).
+[Tue Jul  9 17:29:41 2013] [info] Listening at "http://*:3000".
+[Tue Jul  9 17:29:42 2013] [debug] Your secret passphrase needs to be changed!!!
+[Tue Jul  9 17:29:42 2013] [debug] GET "/".
+[Tue Jul  9 17:29:42 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:29:42 2013] [debug] Rendering template "example/welcome.html.ep".
+[Tue Jul  9 17:29:42 2013] [debug] Template "layouts/default.html.ep" not found.
+[Tue Jul  9 17:29:42 2013] [debug] 200 OK (0.008065s, 123.993/s).
+[Tue Jul  9 17:29:48 2013] [debug] GET "/".
+[Tue Jul  9 17:29:48 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:29:48 2013] [debug] Rendering cached template "example/welcome.html.ep".
+[Tue Jul  9 17:29:48 2013] [debug] Template "layouts/default.html.ep" not found.
+[Tue Jul  9 17:29:48 2013] [debug] 200 OK (0.002020s, 495.050/s).
+[Tue Jul  9 17:29:48 2013] [debug] GET "/".
+[Tue Jul  9 17:29:48 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:29:48 2013] [debug] Rendering cached template "example/welcome.html.ep".
+[Tue Jul  9 17:29:48 2013] [debug] Template "layouts/default.html.ep" not found.
+[Tue Jul  9 17:29:48 2013] [debug] 200 OK (0.001457s, 686.342/s).
+[Tue Jul  9 17:29:48 2013] [debug] GET "/".
+[Tue Jul  9 17:29:48 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:29:48 2013] [debug] Rendering cached template "example/welcome.html.ep".
+[Tue Jul  9 17:29:48 2013] [debug] Template "layouts/default.html.ep" not found.
+[Tue Jul  9 17:29:48 2013] [debug] 200 OK (0.001427s, 700.771/s).
+[Tue Jul  9 17:35:52 2013] [debug] GET "/".
+[Tue Jul  9 17:35:52 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:35:52 2013] [debug] Rendering cached template "example/welcome.html.ep".
+[Tue Jul  9 17:35:52 2013] [debug] Template "layouts/default.html.ep" not found.
+[Tue Jul  9 17:35:52 2013] [debug] 200 OK (0.002064s, 484.496/s).
+[Tue Jul  9 17:36:01 2013] [info] Listening at "http://*:3000".
+[Tue Jul  9 17:36:03 2013] [debug] Your secret passphrase needs to be changed!!!
+[Tue Jul  9 17:36:03 2013] [debug] GET "/".
+[Tue Jul  9 17:36:03 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:36:03 2013] [debug] Rendering template "example/welcome.html.ep".
+[Tue Jul  9 17:36:03 2013] [debug] Template "layouts/default.html.ep" not found.
+[Tue Jul  9 17:36:03 2013] [debug] 200 OK (0.009535s, 104.877/s).
+[Tue Jul  9 17:37:15 2013] [info] Listening at "http://*:3000".
+[Tue Jul  9 17:37:16 2013] [debug] Your secret passphrase needs to be changed!!!
+[Tue Jul  9 17:37:16 2013] [debug] GET "/".
+[Tue Jul  9 17:37:16 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:37:17 2013] [error] file error - header.tt2: No such file or directory
+[Tue Jul  9 17:37:17 2013] [debug] Template "exception.development.html.ep" not found.
+[Tue Jul  9 17:37:17 2013] [debug] Template "exception.html.ep" not found.
+[Tue Jul  9 17:37:17 2013] [debug] Rendering inline template.
+[Tue Jul  9 17:37:17 2013] [debug] Rendering inline template.
+[Tue Jul  9 17:37:17 2013] [debug] 500 Internal Server Error (0.054870s, 18.225/s).
+[Tue Jul  9 17:38:01 2013] [debug] GET "/".
+[Tue Jul  9 17:38:01 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:38:01 2013] [error] file error - header.tt2: No such file or directory
+[Tue Jul  9 17:38:01 2013] [debug] Template "exception.development.html.ep" not found.
+[Tue Jul  9 17:38:01 2013] [debug] Template "exception.html.ep" not found.
+[Tue Jul  9 17:38:01 2013] [debug] Rendering cached inline template.
+[Tue Jul  9 17:38:01 2013] [debug] Rendering cached inline template.
+[Tue Jul  9 17:38:01 2013] [debug] 500 Internal Server Error (0.012656s, 79.014/s).
+[Tue Jul  9 17:38:05 2013] [info] Listening at "http://*:3000".
+[Tue Jul  9 17:38:05 2013] [debug] Your secret passphrase needs to be changed!!!
+[Tue Jul  9 17:38:07 2013] [debug] GET "/".
+[Tue Jul  9 17:38:07 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:38:07 2013] [error] file error - common_htmlhead.tt2: No such file or directory
+[Tue Jul  9 17:38:07 2013] [debug] Template "exception.development.html.ep" not found.
+[Tue Jul  9 17:38:07 2013] [debug] Template "exception.html.ep" not found.
+[Tue Jul  9 17:38:07 2013] [debug] Rendering inline template.
+[Tue Jul  9 17:38:07 2013] [debug] Rendering inline template.
+[Tue Jul  9 17:38:07 2013] [debug] 500 Internal Server Error (0.056916s, 17.570/s).
+[Tue Jul  9 17:39:11 2013] [debug] GET "/".
+[Tue Jul  9 17:39:11 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:39:11 2013] [debug] 200 OK (0.007611s, 131.389/s).
+[Tue Jul  9 17:39:15 2013] [debug] GET "/".
+[Tue Jul  9 17:39:15 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:39:15 2013] [debug] 200 OK (0.001589s, 629.327/s).
+[Tue Jul  9 17:39:18 2013] [info] Listening at "http://*:3000".
+[Tue Jul  9 17:39:19 2013] [debug] Your secret passphrase needs to be changed!!!
+[Tue Jul  9 17:39:19 2013] [debug] GET "/".
+[Tue Jul  9 17:39:19 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:39:19 2013] [debug] 200 OK (0.033220s, 30.102/s).
+[Tue Jul  9 17:39:20 2013] [debug] GET "/".
+[Tue Jul  9 17:39:20 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:39:20 2013] [debug] 200 OK (0.014067s, 71.088/s).
+[Tue Jul  9 17:42:17 2013] [debug] GET "/".
+[Tue Jul  9 17:42:17 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:42:17 2013] [debug] 200 OK (0.003457s, 289.268/s).
+[Tue Jul  9 17:42:32 2013] [debug] GET "/".
+[Tue Jul  9 17:42:32 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:42:32 2013] [debug] 200 OK (0.003395s, 294.551/s).
+[Tue Jul  9 17:42:54 2013] [debug] GET "/".
+[Tue Jul  9 17:42:54 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:42:54 2013] [error] perl error - EVAL_PERL not set
+[Tue Jul  9 17:42:54 2013] [debug] Template "exception.development.html.ep" not found.
+[Tue Jul  9 17:42:54 2013] [debug] Template "exception.html.ep" not found.
+[Tue Jul  9 17:42:54 2013] [debug] Rendering inline template.
+[Tue Jul  9 17:42:54 2013] [debug] Rendering inline template.
+[Tue Jul  9 17:42:54 2013] [debug] 500 Internal Server Error (0.029545s, 33.847/s).
+[Tue Jul  9 17:43:32 2013] [info] Listening at "http://*:3000".
+[Tue Jul  9 17:43:35 2013] [debug] Your secret passphrase needs to be changed!!!
+[Tue Jul  9 17:43:35 2013] [debug] GET "/".
+[Tue Jul  9 17:43:35 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:43:35 2013] [debug] 200 OK (0.033937s, 29.466/s).
+[Tue Jul  9 17:43:47 2013] [debug] GET "/".
+[Tue Jul  9 17:43:47 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:43:47 2013] [error] undef error - Global symbol "$c" requires explicit package name at (eval 371) line 3.
+
+[Tue Jul  9 17:43:47 2013] [debug] Template "exception.development.html.ep" not found.
+[Tue Jul  9 17:43:47 2013] [debug] Template "exception.html.ep" not found.
+[Tue Jul  9 17:43:47 2013] [debug] Rendering inline template.
+[Tue Jul  9 17:43:47 2013] [debug] Rendering inline template.
+[Tue Jul  9 17:43:47 2013] [debug] 500 Internal Server Error (0.029567s, 33.821/s).
+[Tue Jul  9 17:44:02 2013] [debug] GET "/".
+[Tue Jul  9 17:44:02 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:44:02 2013] [error] undef error - Can't modify constant item in scalar assignment at (eval 375) line 3, near "))"
+Bareword "SRVManager::Example" not allowed while "strict subs" in use at (eval 375) line 3.
+
+[Tue Jul  9 17:44:02 2013] [debug] Template "exception.development.html.ep" not found.
+[Tue Jul  9 17:44:02 2013] [debug] Template "exception.html.ep" not found.
+[Tue Jul  9 17:44:02 2013] [debug] Rendering cached inline template.
+[Tue Jul  9 17:44:02 2013] [debug] Rendering cached inline template.
+[Tue Jul  9 17:44:02 2013] [debug] 500 Internal Server Error (0.012834s, 77.918/s).
+[Tue Jul  9 17:44:22 2013] [debug] GET "/".
+[Tue Jul  9 17:44:22 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:44:22 2013] [debug] 200 OK (0.004080s, 245.098/s).
+[Tue Jul  9 17:45:29 2013] [debug] GET "/".
+[Tue Jul  9 17:45:29 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:45:29 2013] [debug] 200 OK (0.010535s, 94.922/s).
+[Tue Jul  9 17:45:37 2013] [debug] GET "/".
+[Tue Jul  9 17:45:37 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:45:37 2013] [debug] 200 OK (0.010231s, 97.742/s).
+[Tue Jul  9 17:46:57 2013] [debug] GET "/".
+[Tue Jul  9 17:46:57 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:46:57 2013] [debug] 200 OK (0.011811s, 84.667/s).
+[Tue Jul  9 17:48:46 2013] [info] Listening at "http://*:3000".
+[Tue Jul  9 17:48:49 2013] [debug] Your secret passphrase needs to be changed!!!
+[Tue Jul  9 17:48:49 2013] [debug] GET "/".
+[Tue Jul  9 17:48:49 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:48:49 2013] [debug] 200 OK (0.036876s, 27.118/s).
+[Tue Jul  9 17:49:28 2013] [debug] GET "/".
+[Tue Jul  9 17:49:28 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:49:28 2013] [debug] 200 OK (0.009708s, 103.008/s).
+[Tue Jul  9 17:51:42 2013] [debug] GET "/".
+[Tue Jul  9 17:51:42 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Tue Jul  9 17:51:42 2013] [debug] 200 OK (0.009610s, 104.058/s).
+[Wed Jul 10 12:13:33 2013] [info] Listening at "http://*:3000".
+[Wed Jul 10 12:13:45 2013] [debug] Your secret passphrase needs to be changed!!!
+[Wed Jul 10 12:13:45 2013] [debug] GET "/".
+[Wed Jul 10 12:13:45 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Wed Jul 10 12:13:45 2013] [debug] 200 OK (0.051412s, 19.451/s).
+[Wed Jul 10 12:14:31 2013] [debug] GET "/".
+[Wed Jul 10 12:14:31 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Wed Jul 10 12:14:31 2013] [debug] 200 OK (0.011310s, 88.417/s).
+[Wed Jul 10 12:15:45 2013] [debug] GET "/".
+[Wed Jul 10 12:15:45 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Wed Jul 10 12:15:45 2013] [debug] 200 OK (0.011745s, 85.143/s).
+[Wed Jul 10 12:16:02 2013] [debug] GET "/".
+[Wed Jul 10 12:16:02 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Wed Jul 10 12:16:02 2013] [debug] 200 OK (0.008309s, 120.351/s).
+[Wed Jul 10 12:16:18 2013] [debug] GET "/".
+[Wed Jul 10 12:16:18 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Wed Jul 10 12:16:18 2013] [debug] 200 OK (0.011707s, 85.419/s).
+[Wed Jul 10 12:16:26 2013] [debug] GET "/".
+[Wed Jul 10 12:16:26 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Wed Jul 10 12:16:26 2013] [debug] 200 OK (0.011615s, 86.096/s).
+[Wed Jul 10 12:16:33 2013] [debug] GET "/".
+[Wed Jul 10 12:16:33 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Wed Jul 10 12:16:33 2013] [debug] 200 OK (0.011568s, 86.445/s).
+[Wed Jul 10 12:16:45 2013] [debug] GET "/".
+[Wed Jul 10 12:16:45 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Wed Jul 10 12:16:45 2013] [debug] 200 OK (0.012464s, 80.231/s).
+[Wed Jul 10 12:16:51 2013] [debug] GET "/".
+[Wed Jul 10 12:16:51 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Wed Jul 10 12:16:51 2013] [debug] 200 OK (0.008893s, 112.448/s).
+[Wed Jul 10 12:16:52 2013] [debug] GET "/static/js/jquery.min.js".
+[Wed Jul 10 12:16:52 2013] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jul 10 12:16:52 2013] [debug] Template "not_found.html.ep" not found.
+[Wed Jul 10 12:16:52 2013] [debug] Rendering inline template.
+[Wed Jul 10 12:16:52 2013] [debug] Rendering inline template.
+[Wed Jul 10 12:16:52 2013] [debug] 404 Not Found (0.020486s, 48.814/s).
+[Wed Jul 10 12:16:52 2013] [debug] GET "/static/css/screen.css".
+[Wed Jul 10 12:16:52 2013] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jul 10 12:16:52 2013] [debug] Template "not_found.html.ep" not found.
+[Wed Jul 10 12:16:52 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:16:52 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:16:52 2013] [debug] 404 Not Found (0.008278s, 120.802/s).
+[Wed Jul 10 12:16:55 2013] [debug] GET "/static/css/print.css".
+[Wed Jul 10 12:16:55 2013] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jul 10 12:16:55 2013] [debug] Template "not_found.html.ep" not found.
+[Wed Jul 10 12:16:55 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:16:55 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:16:55 2013] [debug] 404 Not Found (0.008134s, 122.941/s).
+[Wed Jul 10 12:18:19 2013] [debug] GET "/".
+[Wed Jul 10 12:18:19 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Wed Jul 10 12:18:19 2013] [debug] 200 OK (0.016751s, 59.698/s).
+[Wed Jul 10 12:18:20 2013] [debug] GET "/static/js/jquery.min.js".
+[Wed Jul 10 12:18:20 2013] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jul 10 12:18:20 2013] [debug] Template "not_found.html.ep" not found.
+[Wed Jul 10 12:18:20 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:18:20 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:18:20 2013] [debug] 404 Not Found (0.008924s, 112.057/s).
+[Wed Jul 10 12:18:20 2013] [debug] GET "/static/css/print.css".
+[Wed Jul 10 12:18:20 2013] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jul 10 12:18:20 2013] [debug] Template "not_found.html.ep" not found.
+[Wed Jul 10 12:18:20 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:18:20 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:18:20 2013] [debug] 404 Not Found (0.008719s, 114.692/s).
+[Wed Jul 10 12:18:20 2013] [debug] GET "/static/css/screen.css".
+[Wed Jul 10 12:18:20 2013] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jul 10 12:18:20 2013] [debug] Template "not_found.html.ep" not found.
+[Wed Jul 10 12:18:20 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:18:20 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:18:20 2013] [debug] 404 Not Found (0.007788s, 128.403/s).
+[Wed Jul 10 12:21:13 2013] [info] Listening at "http://*:3000".
+[Wed Jul 10 12:21:23 2013] [debug] Your secret passphrase needs to be changed!!!
+[Wed Jul 10 12:21:23 2013] [debug] GET "/".
+[Wed Jul 10 12:21:23 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Wed Jul 10 12:21:23 2013] [debug] 200 OK (0.041251s, 24.242/s).
+[Wed Jul 10 12:21:24 2013] [debug] GET "/static/js/jquery.min.js".
+[Wed Jul 10 12:21:24 2013] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jul 10 12:21:24 2013] [debug] Template "not_found.html.ep" not found.
+[Wed Jul 10 12:21:24 2013] [debug] Rendering inline template.
+[Wed Jul 10 12:21:24 2013] [debug] Rendering inline template.
+[Wed Jul 10 12:21:24 2013] [debug] 404 Not Found (0.019185s, 52.124/s).
+[Wed Jul 10 12:21:24 2013] [debug] GET "/static/js/http://code.jquery.com/jquery-1.10.1.min.js".
+[Wed Jul 10 12:21:24 2013] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jul 10 12:21:24 2013] [debug] Template "not_found.html.ep" not found.
+[Wed Jul 10 12:21:24 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:21:24 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:21:24 2013] [debug] 404 Not Found (0.007471s, 133.851/s).
+[Wed Jul 10 12:21:25 2013] [debug] GET "/static/js/http://code.jquery.com/jquery-migrate-1.2.1.min.js".
+[Wed Jul 10 12:21:25 2013] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jul 10 12:21:25 2013] [debug] Template "not_found.html.ep" not found.
+[Wed Jul 10 12:21:25 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:21:25 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:21:25 2013] [debug] 404 Not Found (0.006995s, 142.959/s).
+[Wed Jul 10 12:21:25 2013] [debug] GET "/static/css/print.css".
+[Wed Jul 10 12:21:25 2013] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jul 10 12:21:25 2013] [debug] Template "not_found.html.ep" not found.
+[Wed Jul 10 12:21:25 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:21:25 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:21:25 2013] [debug] 404 Not Found (0.007583s, 131.874/s).
+[Wed Jul 10 12:21:26 2013] [debug] GET "/static/css/screen.css".
+[Wed Jul 10 12:21:26 2013] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jul 10 12:21:26 2013] [debug] Template "not_found.html.ep" not found.
+[Wed Jul 10 12:21:26 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:21:26 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:21:26 2013] [debug] 404 Not Found (0.006973s, 143.410/s).
+[Wed Jul 10 12:21:26 2013] [debug] GET "/".
+[Wed Jul 10 12:21:26 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Wed Jul 10 12:21:26 2013] [debug] 200 OK (0.014992s, 66.702/s).
+[Wed Jul 10 12:23:08 2013] [debug] GET "/".
+[Wed Jul 10 12:23:08 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Wed Jul 10 12:23:08 2013] [debug] 200 OK (0.018811s, 53.160/s).
+[Wed Jul 10 12:23:23 2013] [debug] GET "/".
+[Wed Jul 10 12:23:23 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Wed Jul 10 12:23:23 2013] [debug] 200 OK (0.015407s, 64.906/s).
+[Wed Jul 10 12:23:33 2013] [debug] GET "/".
+[Wed Jul 10 12:23:33 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Wed Jul 10 12:23:33 2013] [debug] 200 OK (0.015454s, 64.708/s).
+[Wed Jul 10 12:23:35 2013] [debug] GET "/".
+[Wed Jul 10 12:23:35 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Wed Jul 10 12:23:35 2013] [debug] 200 OK (0.015314s, 65.300/s).
+[Wed Jul 10 12:23:41 2013] [debug] GET "/".
+[Wed Jul 10 12:23:41 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Wed Jul 10 12:23:41 2013] [debug] 200 OK (0.015393s, 64.965/s).
+[Wed Jul 10 12:23:42 2013] [debug] GET "/static/js/jquery.min.js".
+[Wed Jul 10 12:23:42 2013] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jul 10 12:23:42 2013] [debug] Template "not_found.html.ep" not found.
+[Wed Jul 10 12:23:42 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:23:42 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:23:42 2013] [debug] 404 Not Found (0.007673s, 130.327/s).
+[Wed Jul 10 12:23:42 2013] [debug] GET "/static/css/screen.css".
+[Wed Jul 10 12:23:42 2013] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jul 10 12:23:42 2013] [debug] Template "not_found.html.ep" not found.
+[Wed Jul 10 12:23:42 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:23:42 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:23:42 2013] [debug] 404 Not Found (0.007115s, 140.548/s).
+[Wed Jul 10 12:23:43 2013] [debug] GET "/static/css/print.css".
+[Wed Jul 10 12:23:43 2013] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jul 10 12:23:43 2013] [debug] Template "not_found.html.ep" not found.
+[Wed Jul 10 12:23:43 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:23:43 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:23:43 2013] [debug] 404 Not Found (0.007554s, 132.380/s).
+[Wed Jul 10 12:40:08 2013] [info] Listening at "http://*:3000".
+[Wed Jul 10 12:40:18 2013] [debug] Your secret passphrase needs to be changed!!!
+[Wed Jul 10 12:40:18 2013] [debug] GET "/".
+[Wed Jul 10 12:40:18 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Wed Jul 10 12:40:18 2013] [debug] 200 OK (0.042384s, 23.594/s).
+[Wed Jul 10 12:40:19 2013] [debug] GET "/static/css/print.css".
+[Wed Jul 10 12:40:19 2013] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jul 10 12:40:19 2013] [debug] Template "not_found.html.ep" not found.
+[Wed Jul 10 12:40:19 2013] [debug] Rendering inline template.
+[Wed Jul 10 12:40:19 2013] [debug] Rendering inline template.
+[Wed Jul 10 12:40:19 2013] [debug] 404 Not Found (0.019789s, 50.533/s).
+[Wed Jul 10 12:40:20 2013] [debug] GET "/static/css/screen.css".
+[Wed Jul 10 12:40:20 2013] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jul 10 12:40:20 2013] [debug] Template "not_found.html.ep" not found.
+[Wed Jul 10 12:40:20 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:40:20 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:40:20 2013] [debug] 404 Not Found (0.007223s, 138.447/s).
+[Wed Jul 10 12:40:50 2013] [debug] GET "/".
+[Wed Jul 10 12:40:50 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Wed Jul 10 12:40:50 2013] [debug] 200 OK (0.015840s, 63.131/s).
+[Wed Jul 10 12:40:52 2013] [debug] GET "/static/css/print.css".
+[Wed Jul 10 12:40:52 2013] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jul 10 12:40:52 2013] [debug] Template "not_found.html.ep" not found.
+[Wed Jul 10 12:40:52 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:40:52 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:40:52 2013] [debug] 404 Not Found (0.018343s, 54.517/s).
+[Wed Jul 10 12:40:52 2013] [debug] GET "/static/css/screen.css".
+[Wed Jul 10 12:40:52 2013] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jul 10 12:40:52 2013] [debug] Template "not_found.html.ep" not found.
+[Wed Jul 10 12:40:52 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:40:52 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 12:40:52 2013] [debug] 404 Not Found (0.007166s, 139.548/s).
+[Wed Jul 10 14:16:50 2013] [debug] GET "/".
+[Wed Jul 10 14:16:50 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Wed Jul 10 14:16:50 2013] [debug] 200 OK (0.015456s, 64.700/s).
+[Wed Jul 10 14:16:54 2013] [debug] GET "/".
+[Wed Jul 10 14:16:54 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Wed Jul 10 14:16:54 2013] [debug] 200 OK (0.014948s, 66.899/s).
+[Wed Jul 10 14:16:57 2013] [info] Listening at "http://*:3000".
+[Wed Jul 10 14:16:59 2013] [debug] Your secret passphrase needs to be changed!!!
+[Wed Jul 10 14:16:59 2013] [debug] GET "/".
+[Wed Jul 10 14:16:59 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Wed Jul 10 14:16:59 2013] [debug] 200 OK (0.012784s, 78.223/s).
+[Wed Jul 10 14:17:38 2013] [debug] GET "/".
+[Wed Jul 10 14:17:38 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Wed Jul 10 14:17:38 2013] [debug] 200 OK (0.030454s, 32.836/s).
+[Wed Jul 10 14:18:38 2013] [debug] GET "/".
+[Wed Jul 10 14:18:38 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Wed Jul 10 14:18:38 2013] [debug] 200 OK (0.011464s, 87.230/s).
+[Wed Jul 10 14:19:01 2013] [debug] GET "/".
+[Wed Jul 10 14:19:01 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Wed Jul 10 14:19:01 2013] [debug] 200 OK (0.011540s, 86.655/s).
+[Wed Jul 10 14:19:08 2013] [debug] GET "/".
+[Wed Jul 10 14:19:08 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Wed Jul 10 14:19:08 2013] [debug] 200 OK (0.007593s, 131.700/s).
+[Wed Jul 10 14:19:09 2013] [debug] GET "/static/css/print.css".
+[Wed Jul 10 14:19:09 2013] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jul 10 14:19:09 2013] [debug] Template "not_found.html.ep" not found.
+[Wed Jul 10 14:19:09 2013] [debug] Rendering inline template.
+[Wed Jul 10 14:19:09 2013] [debug] Rendering inline template.
+[Wed Jul 10 14:19:09 2013] [debug] 404 Not Found (0.018881s, 52.963/s).
+[Wed Jul 10 14:19:09 2013] [debug] GET "/static/css/screen.css".
+[Wed Jul 10 14:19:09 2013] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jul 10 14:19:09 2013] [debug] Template "not_found.html.ep" not found.
+[Wed Jul 10 14:19:09 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 14:19:09 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 14:19:09 2013] [debug] 404 Not Found (0.006841s, 146.177/s).
+[Wed Jul 10 14:20:34 2013] [debug] GET "/".
+[Wed Jul 10 14:20:34 2013] [debug] Routing to controller "SRVManager::Example" and action "welcome".
+[Wed Jul 10 14:20:34 2013] [debug] 200 OK (0.012885s, 77.610/s).
+[Wed Jul 10 14:20:34 2013] [debug] GET "/static/css/print.css".
+[Wed Jul 10 14:20:34 2013] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jul 10 14:20:34 2013] [debug] Template "not_found.html.ep" not found.
+[Wed Jul 10 14:20:34 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 14:20:34 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 14:20:34 2013] [debug] 404 Not Found (0.007534s, 132.732/s).
+[Wed Jul 10 14:20:35 2013] [debug] GET "/static/css/screen.css".
+[Wed Jul 10 14:20:35 2013] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jul 10 14:20:35 2013] [debug] Template "not_found.html.ep" not found.
+[Wed Jul 10 14:20:35 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 14:20:35 2013] [debug] Rendering cached inline template.
+[Wed Jul 10 14:20:35 2013] [debug] 404 Not Found (0.007504s, 133.262/s).

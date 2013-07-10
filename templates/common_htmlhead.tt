@@ -1,0 +1,14 @@
+<!-- JS -->
+[% FOREACH js = c.app.config.template.js %]
+	[% UNLESS js.match('http:\/\/') %]
+		<script type="text/javascript" src="/static/js/[% js %]"></script>
+	[% ELSE %]
+		<script type="text/javascript" src="[% js %]"></script>
+	[% END %]
+[% END %]
+
+<!-- CSS -->
+[% FOREACH css = c.app.config.template.css.keys %]
+    <link rel="stylesheet" href="/static/css/[% css %]" type="text/css" media="[% c.app.config.template.css.$css.media %]"/>
+[% END %]
+
