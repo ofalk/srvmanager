@@ -38,11 +38,22 @@ sub name {
 sub query {
 	my $self = shift;
 	my $q = $self->param('q');
-	my $disposed = "AND STATUS_ID NOT IN (SELECT STATUS_ID FROM CAT_STATUS WHERE NAME = 'Disposed')" if $self->param('disposed');
-	warn $q;
-	my $result = $self->db->resultset('Server')->search({ hostname => { -like => "$q%" } });
-	my $message = "Qery server. You requested '$q'";
-	$message = "No result found for '$q'!" unless $result;
+	my $disposed = "";
+	$disposed = "AND CAT_STATUS_ID NOT IN (SELECT STATUS_ID FROM CAT_STATUS WHERE NAME = 'Disposed')" unless $self->param('disposed');
+	$self->stash(q => $q);
+	$self->stash(disposed => $self->param('disposed'));
+	
+	my $result = $self->db->resultset('Server')->search(
+		\["(
+			HOSTNAME	LIKE \"%$q%\" OR
+			IP_ADDRESS	LIKE \"%$q%\" OR
+			DESCRIPTION	LIKE \"%$q%\" OR
+			APPLICATION	LIKE \"%$q%\" OR
+			SERIAL_NR	LIKE \"%$q%\"
+		)" . $disposed||""]
+	);
+	$result->count ? $self->stash(message => "Query server. You queried for '$q'") :
+		  $self->stash(message => "No result found for '$q'!");
 	$self->render(
 		'server/result_multi',
 		result => $result,

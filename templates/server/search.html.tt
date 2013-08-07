@@ -2,10 +2,10 @@
 	<tr><td>
 		<form id="search-form" action="[% h.url_for('/server/query') %]" method="post">
 			<fieldset>
-				<input name="q" id="q" type="text" placeholder="Servername/IP/Description/Application/Serial/Tag">
+				<input name="q" type="text" id="q" placeholder="Servername/IP/Description/Application/Serial/Tag" value="[% q IF q %]">
 				<button type="submit" class="search_button">Search</button>
 				<br/>
-				<input name="disposed" type="checkbox" name="disposed" value="0"/>Show disposed servers
+				<input name="disposed" type="checkbox" id="disposed" [% "checked" IF disposed %] value="yes"/>Show disposed servers
 			</fieldset>
 		</form>
 	</td></tr>

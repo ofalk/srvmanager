@@ -1,5 +1,8 @@
 	</div>
 </div>
+<div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+Copyright © 2012-2013 Oliver Falk / Linux Kernel Austria
+</div>
 <!--
 	<div class="debug">
 		<h1>c hash</h1>
