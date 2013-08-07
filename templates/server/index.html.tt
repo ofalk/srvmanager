@@ -1,0 +1,1 @@
+[% INCLUDE server/search.html.tt %]

@@ -1,0 +1,15 @@
+        <div class="span-28 viewTitleBorders">
+          <h1 class='loud'>Welcome to SRVManager (aka SM, aka ServerManager)</h1>
+        </div>
+        <div class="span-20">
+          The application has been built with:</br>
+          <ul>
+            <li><a href="http://perl.com">Perl</a></li>
+            <li><a href="http://mojolicio.us">Mojolicious</a></li>
+            <li><a href="http://template-toolkit.org">Template::Toolkit</a></li>
+          </ul>
+          See also:
+          <ul>
+            <li><a href="http://github.com/ofalk">ofalk @ github</a></li>
+          </ul>
+        </div>

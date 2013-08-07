@@ -1,0 +1,56 @@
+<div class="left-menu">
+	<a class='loud' href='/'><img src='/static/images/house.png'/>Home</a><p/><p/>
+	<div class='menu_heading'>Server</div><p/>
+	<ul>
+		<li><a class='quiet' href='[% h.url_for('server') %]'><img src='/static/images/server.png'/>Server</a></il>
+	</ul>
+
+	<p/>
+
+	<div class='menu_heading'>Cluster</div><p/>
+	<ul>
+		<li><a class='quiet' href='[% h.url_for('cluster') %]'><img src='/static/images/computer_link.png'/>Cluster</a></li>
+		<li><a class='quiet' href='[% h.url_for('clusterpackage') %]'><img src='/static/images/package.png'/>Packages</a></li>
+		<li><a class='quiet' href='[% h.url_for('catclustersoftware') %]'><img src='/static/images/shield.png'/>Software</a></li>
+	</ul>
+
+	<p/>
+
+	<div class='menu_heading'>Categories - not working yet!!!</div><p/>
+	<ul>
+		<li><a class='quiet' href='[% h.url_for('catvendors') %]'><img src='/static/images/server.png'/>Vendors</a></li>
+		<li><a class='quiet' href='[% h.url_for('catasp') %]'><img src='/static/images/coins.png'/>ASPs</a></li>
+		<li><a class='quiet' href='[% h.url_for('catsites') %]'><img src='/static/images/world.png'/>Sites</a></li>
+		<li><a class='quiet' href='[% h.url_for('catlocations') %]'><img src='/static/images/map.png' width='20px'/>Locations</a></li>
+		<li><a class='quiet' href='[% h.url_for('catstates') %]'><img src='/static/images/tick.png'/>States</a></li>
+		<li><a class='quiet' href='[% h.url_for('catservermodels') %]'><img src='/static/images/computer.png'/>Server Models</a></li>
+		<li><a class='quiet' href='[% h.url_for('catdomains') %]'><img src='/static/images/sitemap.png'/>Domains</a></li>
+		<li><a class='quiet' href='[% h.url_for('catproductcategories') %]'><img src='/static/images/user_suit.png'/>Product Categories</a></li>
+		<li><a class='quiet' href='[% h.url_for('catpatchtime') %]'><img src='/static/images/pill.png' width='20px'/>Patchtimes</a></li>
+		<li><a class='quiet' href='[% h.url_for('catsupportlevels') %]'><img src='/static/images/wrench.png'/>Supportlevels</a></li>
+		<li><a class='quiet' href='[% h.url_for('catosversions') %]'><img src='/static/images/database.png'/>OS Versions</a></li>
+		<li><a class='quiet' href='[% h.url_for('catcputypes') %]'><img src='/static/images/database.png'/>CPU Types</a></li>
+		<li><a class='quiet' href='[% h.url_for('catosarchs') %]'><img src='/static/images/database.png'/>OS Archs</a></li>
+		<li><a class='quiet' href='[% h.url_for('catoscategories') %]'><img src='/static/images/database.png'/>OS Categories</a></li>
+		<li><a class='quiet' href='[% h.url_for('cataccountingtypes') %]'><img src='/static/images/money.png'/>Accounting Types</a></li>
+	</ul>
+
+	<p/>
+
+	<div class='menu_heading'>Admin - not working yet!!!</div><p/>
+	<ul>
+		<li><a class='quiet' href='[% h.url_for('admgroups') %]admgroup'><img src='/static/images/group.png'/>Groups</a></li>
+		<li><a class='quiet' href='[% h.url_for('admroles') %]'><img src='/static/images/group.png'/>Roles</a></li>
+		<li><a class='quiet' href='[% h.url_for('admuser2group') %]'><img src='/static/images/group_link.png'/>User / Group Mapping</a></li>
+		<li><a class='quiet' href='[% h.url_for('admdepartments') %]'><img src='/static/images/chart_organisation.png'/>Departments</a></li>
+		<li><a class='quiet' href='[% h.url_for('admuser') %]'><img src='/static/images/user_suit.png'/>Users</a></il>
+	</ul>
+
+	<p/>
+
+	<div class='menu_heading'>Storage - not working yet!!!</div><p/>
+	<ul>
+		<li><a class='quiet' href='[% h.url_for('storages') %]'><img src='/static/images/database.png'/>Storages</a></li>
+		<li><a class='quiet' href='[% h.url_for('storagemodels') %]'><img src='/static/images/database.png'/>Storage Models</a></li>
+	</ul>
+</div>

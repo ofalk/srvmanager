@@ -1,0 +1,101 @@
+[% IF result %]
+<table class="server" id="server">
+	<tr>
+		<th>Field</th><th>Value</th></tr>
+	<tr>
+		<td>Hostname</td>
+		[% UNLESS edit %]
+			<td>[% result.hostname %]</td>
+		[% ELSE %]
+		[% END %]
+	</tr>
+	<tr>
+		<td>ID</td><td align="right">[% result.server_id %]</td></tr>
+	<tr>
+		<td>Domain</td><td>[% result.cat_domain.name %]</td></tr>
+	<tr>
+		<td>Status</td><td>[% result.cat_status.name %]</td></tr>
+	<tr>
+		<td>Product Category</td><td>[% result.cat_product_category.name %]</td></tr>
+	<tr>
+		<td>Description</td><td>[% result.description %]</td></tr>
+	<tr>
+		<td>Application</td><td>[% result.application %]</td></tr>
+	<tr>
+		<td>ASP</td><td>[% result.cat_asp.name %]</td></tr>
+
+	<tr>
+		<td>Operated by</td><td>[% result.operator_group.name %]</td></tr>
+	<tr>
+		<td>Model</td><td>[% result.cat_server_model.name %]</td></tr>
+	<tr>
+		<td>Serial NR</td><td>[% result.serial_nr %]</td></tr>
+	<tr>
+		<td>Support Level</td><td>[% result.cat_support_level.description %]</td></tr>
+
+	<tr>
+		<td>Physical CPUs</td><td>[% result.physical_cpus %]</td></tr>
+	<tr>
+		<td>Cores per CPU</td><td>[% result.cores_per_cpu %]</td></tr>
+	<tr>
+		<td>CPU Speed</td><td>[% result.cpu_speed %]</td></tr>
+	<tr>
+		<td>Memory in MB</td><td>[% result.memory_in_mb %]</td></tr>
+
+	<tr>
+		<td>Operating System</td><td>[% result.cat_os_version.name %]</td></tr>
+	<tr>
+		<td>OS Architecture</td><td>[% result.cat_os_architecture.name %]</td></tr>
+
+	<tr>
+		<td>License</td><td>[% result.license %]</td></tr>
+	<tr>
+		<td>License End</td><td>[% result.license_end %]</td></tr>
+	<tr>
+		<td>IP Address</td><td>[% result.ip_address %]</td></tr>
+	<tr>
+		<td>Subnet Mask</td><td>[% result.subnet_mask %]</td></tr>
+	<tr>
+		<td>Default Gateway</td><td>[% result.default_gw %]</td></tr>
+
+	<tr>
+		<td>Additional IPs</td><td>[% result.additional_ip %]</td></tr>
+
+	<tr>
+		<td>Remote Management Hostname</td><td>[% result.management_hostname %]</td></tr>
+	<tr>
+		<td>Remote Management IP</td><td>[% result.management_ip %]</td></tr>
+
+	<tr>
+		<td>Site</td><td>[% result.cat_site.name %]</td></tr>
+	<tr>
+		<td>Location</td><td>[% result.cat_location.name %]</td></tr>
+
+	<tr><td>Rack</td><td>[% result.rack %]</td></tr>
+
+	<tr><td>Cluster</td><td>[% result.cluster.name %]</td></tr>
+
+	<tr><td>Delivery Note ID</td><td>[% result.delivery_note_id %]</td></tr>
+	<tr><td>Delivery Date</td><td>[% result.delivery_date %]</td></tr>
+
+	<tr><td>Maintenance End</td><td>[% result.maintenance_end.name %]</td></tr>
+
+	<tr><td>FC Attaced</td><td>[% result.fc_attached ? "Yes" : "No" %]</td></tr>
+	<tr><td>Multipath</td><td>[% result.multipath.name %]</td></tr>
+	<tr><td>iSCSI</td><td>[% result.iscsi_attached %]</td></tr>
+
+	<tr><td>Reboot Notes</td><td>[% result.reboot_notes %]</td></tr>
+	<tr><td>Patch Notes</td><td>[% result.patch_notes %]</td></tr>
+	<tr><td>Patch Time</td><td>[% result.patchtime.name %]</td></tr>
+
+	<tr><td>Asset ID</td><td>[% result.asset_id %]</td></tr>
+
+	<tr><td>Documentation URL</td><td><a href="[% result.documentation_url %]">[% result.documentation_url %]</a></td></tr>
+
+	<tr><td>Tags (space seperated list)</td><td>[% result.tags %]</td></tr>
+[% ELSE %]
+<table id="server">
+	<tr><th colspan="2">Nothing found.</th></tr>
+[% END %]
+	<tr><td colspan="2" class="backbutton"><a style="cursor:pointer;" onclick="javascript:window.history.back()">Back</a></td></tr>
+</table>

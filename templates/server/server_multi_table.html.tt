@@ -1,0 +1,29 @@
+<table class="server_multi" id="server_multi">
+	<tr>
+		<th>ID</th>
+		<th>Hostname</th>
+		<th>Domain</th>
+		<th>Status</th>
+		<th>Description</th>
+		<th>Application</th>
+		<th>Server Model</th>
+		<th>OS</th>
+		<th>IP</th>
+		<th>Cluster</th>
+	</tr>
+
+	[% WHILE (r = result.next) %]
+	<tr>
+		<td><a href="[% h.url_for("/server/id/$r.server_id") %]">[% r.server_id %]</a></td>
+		<td><a href="[% h.url_for("/server/id/$r.server_id") %]">[% r.hostname %]</a></td>
+		<td>[% r.cat_domain.name %]</td>
+		<td>[% r.cat_status.name %]</td>
+		<td>[% r.description %]</td>
+		<td>[% r.application %]</td>
+		<td>[% r.cat_server_model.name %]</td>
+		<td>[% r.cat_os_version.name %]</td>
+		<td>[% r.ip_address %]</td>
+		<td>[% r.cluster.name %]</td>
+	</tr>
+	[% END %]
+</table>

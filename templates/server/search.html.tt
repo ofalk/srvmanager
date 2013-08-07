@@ -1,0 +1,12 @@
+<table class="server">
+	<tr><td>
+		<form id="search-form" action="[% h.url_for('/server/query') %]" method="post">
+			<fieldset>
+				<input name="q" id="q" type="text" placeholder="Servername/IP/Description/Application/Serial/Tag">
+				<button type="submit" class="search_button">Search</button>
+				<br/>
+				<input name="disposed" type="checkbox" name="disposed" value="0"/>Show disposed servers
+			</fieldset>
+		</form>
+	</td></tr>
+</table>

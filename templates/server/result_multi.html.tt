@@ -1,0 +1,4 @@
+<div id="result">
+[% INCLUDE server/search.html.tt %]
+[% INCLUDE server/server_multi_table.html.tt %]
+</div>
