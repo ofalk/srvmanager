@@ -6,6 +6,8 @@ template:
         css:
                 'screen.css':
                         media: 'screen, projection'
+                'sm.css':
+                        media: 'screen, projection'
                 'print.css':
                         media: 'print'
         js:

@@ -65,16 +65,10 @@ __PACKAGE__->belongs_to(
   { storage_model_id => "cat_storage_model_id" },
   { is_deferrable => 1, on_delete => "NO ACTION", on_update => "NO ACTION" },
 );
-__PACKAGE__->has_many(
-  "luns",
-  "Schema::Result::Lun",
-  { "foreign.storage_id" => "self.storage_id" },
-  { cascade_copy => 0, cascade_delete => 0 },
-);
 
 
-# Created by DBIx::Class::Schema::Loader v0.07035 @ 2013-07-10 14:43:44
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:fOQXmEHU2JOA2Kw71e8Fjg
+# Created by DBIx::Class::Schema::Loader v0.07035 @ 2013-07-10 14:53:47
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:KqtfmQXHay5Zvkvj3TdOUw
 
 
 # You can replace this text with custom code or comments, and it will be preserved on regeneration

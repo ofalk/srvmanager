@@ -67,8 +67,6 @@ __PACKAGE__->add_columns(
     is_foreign_key => 1,
     is_nullable => 0,
   },
-  "cat_accounting_type_id",
-  { data_type => "integer", extra => { unsigned => 1 }, is_nullable => 1 },
   "cat_location_id",
   {
     data_type => "integer",
@@ -270,12 +268,6 @@ __PACKAGE__->belongs_to(
     on_update     => "NO ACTION",
   },
 );
-__PACKAGE__->has_many(
-  "luns",
-  "Schema::Result::Lun",
-  { "foreign.server_id" => "self.server_id" },
-  { cascade_copy => 0, cascade_delete => 0 },
-);
 __PACKAGE__->belongs_to(
   "operator_group",
   "Schema::Result::OperatorGroup",
@@ -290,8 +282,8 @@ __PACKAGE__->belongs_to(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07035 @ 2013-07-10 14:43:44
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:+3GLYItSuhYd5ywHs4x9qA
+# Created by DBIx::Class::Schema::Loader v0.07035 @ 2013-07-10 14:53:47
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:MBBi/SPhCfKNR8TR0F0vdA
 
 
 # You can replace this text with custom code or comments, and it will be preserved on regeneration

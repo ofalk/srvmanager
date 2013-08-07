@@ -23,12 +23,6 @@ __PACKAGE__->add_columns(
 );
 __PACKAGE__->set_primary_key("os_category_id");
 __PACKAGE__->has_many(
-  "luns",
-  "Schema::Result::Lun",
-  { "foreign.cat_os_category_id" => "self.os_category_id" },
-  { cascade_copy => 0, cascade_delete => 0 },
-);
-__PACKAGE__->has_many(
   "servers",
   "Schema::Result::Server",
   { "foreign.cat_os_category_id" => "self.os_category_id" },
@@ -36,8 +30,8 @@ __PACKAGE__->has_many(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07035 @ 2013-07-10 14:43:44
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:oqYVX8nroGLgOPWyyY+d5g
+# Created by DBIx::Class::Schema::Loader v0.07035 @ 2013-07-10 14:53:47
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:n9wcbLJsde9JTKwidQAp7A
 
 
 # You can replace this text with custom code or comments, and it will be preserved on regeneration

@@ -33,8 +33,8 @@ __PACKAGE__->has_many(
 __PACKAGE__->many_to_many("users", "adm_user2groups", "user");
 
 
-# Created by DBIx::Class::Schema::Loader v0.07035 @ 2013-07-10 14:43:44
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:UKqL/MCqctGnh9EkHL0ULQ
+# Created by DBIx::Class::Schema::Loader v0.07035 @ 2013-07-10 14:53:47
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:eP/wQaGVcqmtcfPadd+BXQ
 
 
 # You can replace this text with custom code or comments, and it will be preserved on regeneration

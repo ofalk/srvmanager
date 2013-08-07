@@ -58,29 +58,11 @@ __PACKAGE__->has_many(
   { "foreign.user_id" => "self.user_id" },
   { cascade_copy => 0, cascade_delete => 0 },
 );
-__PACKAGE__->has_many(
-  "change_requests_approved_by_uid",
-  "Schema::Result::ChangeRequest",
-  { "foreign.approved_by_uid" => "self.user_id" },
-  { cascade_copy => 0, cascade_delete => 0 },
-);
-__PACKAGE__->has_many(
-  "change_requests_raised_by_uid",
-  "Schema::Result::ChangeRequest",
-  { "foreign.raised_by_uid" => "self.user_id" },
-  { cascade_copy => 0, cascade_delete => 0 },
-);
-__PACKAGE__->has_many(
-  "oncalls",
-  "Schema::Result::Oncall",
-  { "foreign.adm_user_id" => "self.user_id" },
-  { cascade_copy => 0, cascade_delete => 0 },
-);
 __PACKAGE__->many_to_many("groups", "adm_user2groups", "group");
 
 
-# Created by DBIx::Class::Schema::Loader v0.07035 @ 2013-07-10 14:43:44
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:lZHJnhE7rywyQFeUCJpe4Q
+# Created by DBIx::Class::Schema::Loader v0.07035 @ 2013-07-10 14:53:47
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:444Irai93u512jk2guRkHQ
 
 
 # You can replace this text with custom code or comments, and it will be preserved on regeneration

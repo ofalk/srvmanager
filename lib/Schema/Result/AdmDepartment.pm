@@ -30,16 +30,10 @@ __PACKAGE__->has_many(
   { "foreign.adm_department_id" => "self.department_id" },
   { cascade_copy => 0, cascade_delete => 0 },
 );
-__PACKAGE__->has_many(
-  "oncalls",
-  "Schema::Result::Oncall",
-  { "foreign.adm_department_id" => "self.department_id" },
-  { cascade_copy => 0, cascade_delete => 0 },
-);
 
 
-# Created by DBIx::Class::Schema::Loader v0.07035 @ 2013-07-10 14:43:44
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:6cfhvVedbO8TZZkfm/hRBg
+# Created by DBIx::Class::Schema::Loader v0.07035 @ 2013-07-10 14:53:47
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:R316jgp8DfH0OO7vfFxjIw
 
 
 # You can replace this text with custom code or comments, and it will be preserved on regeneration

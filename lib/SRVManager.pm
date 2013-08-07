@@ -1,12 +1,15 @@
 package SRVManager;
 use Mojo::Base 'Mojolicious';
 use YAML qw/LoadFile/;
+use Schema;
 
 # This method will run once at server start
 sub startup {
 	my $self = shift;
 
 	$self->{config} = LoadFile('etc/srvmanager.yml');
+	
+	$self->{secret} = 'ASDFIJL§$§)FDMNN"!=§$JFMN';
 
 	use Data::Dumper;
 	warn Dumper($self->{config});
@@ -16,10 +19,22 @@ sub startup {
 		user		=> $self->{config}->{database}->{user},
 		password	=> $self->{config}->{database}->{password},
 	);
+
+	$self->{schema} = Schema->connect(
+		$self->{config}->{database}->{dsn},
+		$self->{config}->{database}->{user},
+		$self->{config}->{database}->{password},
+	);
+	$self->helper(db => sub { $self->{schema} });
+
+	$self->helper(ref => sub { my $self = shift; ref(shift()) });
+	$self->helper(Dumper => sub { my $self = shift; Dumper(shift()) });
+
 	# Only with Perl 5.14 and l8ter
 	#$self->plugin('DBICAdmin' => {	});
 
 	use Mojolicious::Plugin::TtRenderer::Engine;
+	$self->plugin('Humane');
  
 	my $tt = Mojolicious::Plugin::TtRenderer::Engine->build(
 		mojo => $self,
@@ -44,7 +59,10 @@ sub startup {
 	my $r = $self->routes;
 
 	# Normal route to controller
-	$r->get('/')->to('example#welcome');
+	$r->get('/')->to('index#home');
+	$r->get('/server')->to('server#index');
+	$r->get('/server/:action/*q')->to('server#');
+	$r->post('/server/query')->to('server#query');
 }
 
 1;
