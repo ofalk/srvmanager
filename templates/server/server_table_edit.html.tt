@@ -1,0 +1,124 @@
+<table class="server" id="server">
+[% IF result %]
+	<tr>
+		<th>Field</th><th>Value</th></tr>
+	<tr>
+		<td>[% h.get_name('hostname') %]</td>
+		<td>[% result.hostname %]</td>
+	</tr>
+	<tr>
+		<td>[% h.get_name('server_id') %]</td><td>[% result.server_id %]</td></tr>
+	<tr>
+		<td>[% h.get_name('cat_domain') %]</td><td>[% result.cat_domain.name %]</td></tr>
+	<tr>
+		<td>[% h.get_name('cat_status') %]</td><td>[% result.cat_status.name %]</td></tr>
+	<tr>
+		<td>[% h.get_name('cat_product_category') %]</td><td>[% result.cat_product_category.name %]</td></tr>
+	<tr>
+		<td>[% h.get_name('description') %]</td><td>[% result.description %]</td></tr>
+	<tr>
+		<td>[% h.get_name('application') %]</td><td>[% result.application %]</td></tr>
+	<tr>
+		<td>[% h.get_name('cat_asp') %]</td><td>[% result.cat_asp.name %]</td></tr>
+
+	<tr>
+		<td>[% h.get_name('operator_group') %]</td><td>[% result.operator_group.name %]</td></tr>
+	<tr>
+		<td>[% h.get_name('cat_server_model') %]</td><td>[% result.cat_server_model.name %]</td></tr>
+	<tr>
+		<td>[% h.get_name('serial_nr') %]</td><td>[% result.serial_nr %]</td></tr>
+	<tr>
+		<td>[% h.get_name('cat_support_level') %]</td><td>[% result.cat_support_level.description %]</td></tr>
+
+	<tr>
+		<td>[% h.get_name('physical_cpus') %]</td><td>[% result.physical_cpus %]</td></tr>
+	<tr>
+		<td>[% h.get_name('cores_per_cpu') %]</td><td>[% result.cores_per_cpu %]</td></tr>
+	<tr>
+		<td>[% h.get_name('cpu_speed') %]</td><td>[% result.cpu_speed %]</td></tr>
+	<tr>
+		<td>[% h.get_name('memory_in_mb') %]</td><td>[% result.memory_in_mb %]</td></tr>
+
+	<tr>
+		<td>[% h.get_name('cat_os_version') %]</td><td>[% result.cat_os_version.name %]</td></tr>
+	<tr>
+		<td>[% h.get_name('cat_os_architecture') %]</td><td>[% result.cat_os_architecture.name %]</td></tr>
+
+	<tr>
+		<td>[% h.get_name('license') %]</td><td>[% result.license %]</td></tr>
+	<tr>
+		<td>[% h.get_name('license_end') %]</td><td>[% result.license_end %]</td></tr>
+	<tr>
+		<td>[% h.get_name('ip_address') %]</td><td>[% result.ip_address %]</td></tr>
+	<tr>
+		<td>[% h.get_name('subnet_mask') %]</td><td>[% result.subnet_mask %]</td></tr>
+	<tr>
+		<td>[% h.get_name('default_gw') %]</td><td>[% result.default_gw %]</td></tr>
+
+	<tr>
+		<td>[% h.get_name('additional_ip') %]</td><td>[% result.additional_ip %]</td></tr>
+
+	<tr>
+		<td>[% h.get_name('management_hostname') %]</td><td>[% result.management_hostname %]</td></tr>
+	<tr>
+		<td>[% h.get_name('management_ip') %]</td><td>[% result.management_ip %]</td></tr>
+
+	<tr>
+		<td>[% h.get_name('cat_site') %]</td><td>[% result.cat_site.name %]</td></tr>
+	<tr>
+		<td>[% h.get_name('cat_location') %]</td><td>[% result.cat_location.name %]</td></tr>
+
+	<tr>
+		<td>[% h.get_name('rack') %]</td><td>[% result.rack %]</td>
+	</tr>
+
+	<tr>
+		<td>[% h.get_name('cluster') %]</td><td>[% result.cluster.name %]</td>
+	</tr>
+
+	<tr>
+		<td>[% h.get_name('delivery_note_id') %]</td><td>[% result.delivery_note_id %]</td>
+	</tr>
+	<tr>
+		<td>[% h.get_name('delivery_date') %]</td><td>[% result.delivery_date %]</td>
+	</tr>
+
+	<tr>
+		<td>[% h.get_name('maintenance_end') %]</td><td>[% result.maintenance_end %]</td>
+	</tr>
+
+	<tr>
+		<td>[% h.get_name('fc_attached') %]</td><td>[% result.fc_attached ? "Yes" : "No" %]</td>
+	</tr>
+	<tr>
+		<td>[% h.get_name('uses_multipath') %]</td><td>[% result.uses_multipath ? "Yes" : "No" %]</td>
+	</tr>
+	<tr>
+		<td>[% h.get_name('iscsi_attached') %]</td><td>[% result.iscsi_attached ? "Yes" : "No" %]</td>
+	</tr>
+
+	<tr>
+		<td>[% h.get_name('reboot_notes') %]</td><td>[% result.reboot_notes %]</td>
+	</tr>
+	<tr>
+		<td>[% h.get_name('patch_notes') %]</td><td>[% result.patch_notes %]</td>
+	</tr>
+	<tr>
+		<td>[% h.get_name('cat_patchtime') %]</td><td>[% result.cat_patchtime.name %]</td>
+	</tr>
+
+	<tr>
+		<td>[% h.get_name('asset_id') %]</td><td>[% result.asset_id %]</td>
+	</tr>
+
+	<tr>
+		<td>[% h.get_name('documentation_url') %]</td><td><a href="[% result.documentation_url %]">[% result.documentation_url %]</a></td>
+	</tr>
+
+	<tr>
+		<td>[% h.get_name('tags') %]</td><td>[% result.tags %]</td></tr>
+[% ELSE %]
+	<tr><th colspan="2">Nothing found.</th></tr>
+[% END %]
+	<tr><td colspan="2" class="backbutton"><a style="cursor:pointer;" onclick="javascript:window.history.back()">Back</a></td></tr>
+</table>
