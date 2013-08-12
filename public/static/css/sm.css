@@ -6,6 +6,7 @@
 	border-right-width:1px;
 	border-bottom-width:1px;
 	border-left-width:1px;
+	width: 1000px;
 }
 #server tr > td:first-child {
 	font-weight:bold;
@@ -41,6 +42,7 @@
 	border-right-width:1px;
 	border-bottom-width:1px;
 	border-left-width:1px;
+	width: 1000px;
 }
 
 #server_multi tr > td:first-child {
