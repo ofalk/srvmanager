@@ -29,6 +29,34 @@ sub startup {
 
 	$self->helper(ref => sub { my $self = shift; ref(shift()) });
 	$self->helper(Dumper => sub { my $self = shift; Dumper(shift()) });
+	$self->helper(column_info => sub {
+		my $self = shift;
+		my $res = shift;
+		$res->result_source->column_info(shift);
+	});
+	$self->helper(is_nullable => sub {
+		my $self = shift;
+		my $res = shift;
+		$res->result_source->column_info(shift)->{is_nullable};
+	});
+	$self->helper(data_type => sub {
+		my $self = shift;
+		my $res = shift;
+		$res->result_source->column_info(shift)->{data_type};
+	});
+	$self->helper(size => sub {
+		my $self = shift;
+		my $res = shift;
+		$res->result_source->column_info(shift)->{size};
+	});
+	$self->helper(get_name => sub {
+		# Language stuff / translations should come here.
+		my $self = shift;
+		my $sn = $self->{stash}->{result}->result_source->source_name;
+		my $col = shift;
+		# take care about the context/the class! We are in a requst call here. Therefore we have to use ->{app}!! 
+		$self->{app}->{config}->{column_names}->{$sn}->{$col} || $col;
+	});
 
 	# Only with Perl 5.14 and l8ter
 	#$self->plugin('DBICAdmin' => {	});
