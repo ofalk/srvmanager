@@ -60,4 +60,16 @@ sub query {
 	);
 }
 
+sub edit {
+	my $self = shift;
+	my $id = $self->stash('q');
+	my $result = $self->db->resultset('Server')->find({ server_id => $id });
+	$result ? $self->stash(message => "Edit server by server id. You requested id: $id") :
+		  $self->stash(message => "No result found for ID '$id'!");
+	$self->render(
+		'server/edit',
+		result => $result,
+	);
+}
+
 1;
