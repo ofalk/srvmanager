@@ -10,7 +10,7 @@
 	[% x = c.humane_stash(mes) %]
 [% END %]
 	<div id="container" style="width:100%">
-	<div class='left-menu' style="width:150px;float:left;">
+	<div class='left-menu' style="width:170px;float:left;">
 		[% PROCESS 'menu.tt' %]
 	</div>
 	<div id="content" style="float:left;>
