@@ -1,4 +1,5 @@
 <table class="server_multi" id="server_multi">
+[% IF result.count %]
 	<tr>
 		<th>ID</th>
 		<th>Hostname</th>
@@ -26,4 +27,7 @@
 		<td>[% r.cluster.name %]</td>
 	</tr>
 	[% END %]
+[% ELSE %]
+	<tr><th colspan="10">Nothing found.</th></tr>
+[% END %]
 </table>
