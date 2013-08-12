@@ -1,13 +1,10 @@
-[% IF result %]
 <table class="server" id="server">
+[% IF result %]
 	<tr>
 		<th>Field</th><th>Value</th></tr>
 	<tr>
 		<td>Hostname</td>
-		[% UNLESS edit %]
-			<td>[% result.hostname %]</td>
-		[% ELSE %]
-		[% END %]
+		<td>[% result.hostname %]</td>
 	</tr>
 	<tr>
 		<td>ID</td><td align="right">[% result.server_id %]</td></tr>
@@ -94,7 +91,6 @@
 
 	<tr><td>Tags (space seperated list)</td><td>[% result.tags %]</td></tr>
 [% ELSE %]
-<table id="server">
 	<tr><th colspan="2">Nothing found.</th></tr>
 [% END %]
 	<tr><td colspan="2" class="backbutton"><a style="cursor:pointer;" onclick="javascript:window.history.back()">Back</a></td></tr>
