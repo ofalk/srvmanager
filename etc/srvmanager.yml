@@ -18,3 +18,52 @@ database:
         dsn: "dbi:mysql:dbname=srvmanager;host=mysql01.beer.linux-kernel.at"
         user: srvmanager
         password:
+
+lang: en
+
+# Do not change this unless you are a developer and know what you do
+column_names:
+        Server:
+                hostname: 'Hostname'
+                server_id: 'ID'
+                cat_domain: 'Domain'
+                cat_status: 'Status'
+                cat_product_category: 'Product Category'
+                description: 'Description'
+                application: 'Application'
+                cat_asp: 'ASP'
+                operator_group: 'Operated by'
+                cat_server_model: 'Model'
+                serial_nr: 'Serial#'
+                cat_support_level: 'Support Level'
+                physical_cpus: 'Physical CPUs'
+                cores_per_cpu: 'Cores/CPU'
+                cpu_speed: 'CPU Speed'
+                memory_in_mb: 'Memory (MB)'
+                cat_os_version: 'OS'
+                cat_os_architecture: 'OS Architecture'
+                ip_address: 'IP Address'
+                license: 'License'
+                license_end: 'License End'
+                subnet_mask: 'Subnetmask'
+                default_gw: 'Default Gateway'
+                additional_ip: 'Additional IPs'
+                management_hostname: 'Remote management hostname'
+                management_ip: 'Remote Management IP'
+                cat_site: 'Site'
+                cat_location: 'Location'
+                rack: 'Rack'
+                cluster: 'Cluster'
+                delivery_note_id: 'Delivery note ID'
+                delivery_date: 'Delivery date'
+                maintenance_end: 'Maintenance end'
+                fc_attached: 'Fibre channel'
+                uses_multipath: 'Multipath'
+                iscsi_attached: 'iSCSI'
+                reboot_notes: 'Reboot notes'
+                patch_notes: 'Patch notes'
+                cat_patchtime: 'Patchtime'
+                asset_id: 'Asset ID'
+                documentation_url: 'Documentation URL'
+                tags: 'Tags (space seperated list)'
+                
