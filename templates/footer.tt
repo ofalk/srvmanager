@@ -1,11 +1,13 @@
-			<div id="push"/>
 		</div>
-	</div>
-	<div id="footer">
-		<div class="container">
-			<p class="muted credit">Copyright 2012-2013 Oliver Falk / Linux Kernel Austria</p>
-		</div>
-	</div>
+	</div><!-- wrap -->
+	<div class="push" style="margin-bottom: 60px"/>
+        <nav class="navbar-default navbar-fixed-bottom" role="navigation">
+	  <div class="container">
+            <p class="muted">
+              Copyright 2012-2014 Oliver Falk / Linux Kernel Austria
+            </p>
+	  </div>
+        </nav>
 	<!-- JS -->
 	[% FOREACH js = c.app.config.template.js %]
 		[% UNLESS js.match('http:\/\/') %]

@@ -17,3 +17,7 @@
 td.backbutton {
 	text-align:right;
 }
+
+.status-label {
+	min-width:100px !important;
+}

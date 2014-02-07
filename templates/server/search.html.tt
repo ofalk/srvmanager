@@ -1,12 +1,35 @@
-<form action="[% h.url_for('/server/query') %]" method="post">
-	<fieldset>
-		<div class="input-append">
-			<input style="width:400px;" class="span2" name="q" type="text" id="q" placeholder="Servername/IP/Description/Application/Serial/Tag" value="[% q IF q %]">
-			<button class="btn" type="submit">Search</button>
+<div class="row">
+	<form action="[% h.url_for('/server/query') %]" method="post" role="form">
+		<div class="col-lg-6">
+			<div class="input-group">
+				<input type="text" class="form-control" name="q" id="q" placeholder="Servername/IP/Description/Application/Serial/Tag" value="[% q IF q %]">
+				<div class="input-group-btn">
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="submit" tabindex="-1">Search</button>
+<!-- Doesn't look as nice as I though :-/
+						<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+							<span class="caret"></span>
+							<span class="sr-only">Toggle Dropdown</span>
+						</button>
+						<ul class="dropdown-menu pull-right" role="menu">
+							<li>
+								<div class="btn-group" data-toggle="buttons">
+								<label class="btn btn-primary">
+								<input name="disposed" type="checkbox" id="disposed" [% "checked" IF disposed %] value="yes"/>Show disposed servers
+								</label>
+								</div>
+							</li>
+						</ul>
+-->
+						<div class="btn-group" data-toggle="buttons">
+						<label class="btn btn-primary [% "active" IF disposed %]">
+							<input type="checkbox" name="disposed" id="disposed" onload="_toggle()"> Show disposed
+						</label>
+						</div>
+					</span>
+				</div>
+
+			</div>
 		</div>
-		<br/>
-		<label class="checkbox">
-			<input name="disposed" type="checkbox" id="disposed" [% "checked" IF disposed %] value="yes"/>Show disposed servers
-		</label>
-	</fieldset>
-</form>
+	</form>
+</div>

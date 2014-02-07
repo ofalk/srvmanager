@@ -17,18 +17,22 @@
 
 	[% WHILE (r = result.next) %]
 	<tr>
-		<td><a href="[% h.url_for("/server/edit/$r.server_id") %]"><i class="icon-edit"></td>
+		<td><a href="[% h.url_for("/server/edit/$r.server_id") %]"><i class="glyphicon glyphicon-edit"></a></td>
 		<td><a href="[% h.url_for("/server/id/$r.server_id") %]">[% r.hostname %]</a></td>
 		<td>
-			[% SWITCH r.cat_status.name %]
-				[% CASE 'In Use' %]<span class="badge badge-success">[% r.cat_status.name %]</span> 
-				[% CASE 'Stored' %]<span class="badge">[% r.cat_status.name %]</span> 
-				[% CASE 'Ordered' %]<span class="badge badge-info">[% r.cat_status.name %]</span> 
-				[% CASE 'Disposed' %]<span class="badge badge-inverse">[% r.cat_status.name %]</span> 
-				[% CASE 'to be disposed' %]<span class="badge badge-important">[% r.cat_status.name %]</span> 
-				[% CASE 'Name Reserved' %]<span class="badge badge-warning">[% r.cat_status.name %]</span> 
-				[% CASE %]<span class="badge badge-warning">[% r.cat_status.name %]</span> 
-			[% END %]
+			<span class="label
+				[% SWITCH r.cat_status.name %]
+					[% CASE 'In Use' %]label-success
+					[% CASE 'Stored' %]
+					[% CASE 'Ordered' %]label-info
+					[% CASE 'Disposed' %]label-primary
+					[% CASE 'to be disposed' %]label-warning
+					[% CASE 'Name Reserved' %]label-info
+					[% CASE %]label-danger
+				[% END %]
+				">
+				[% r.cat_status.name %]
+			</span>
 		</td>
 		<td>[% r.description %]</td>
 		<td>[% r.cat_domain.name %]</td>

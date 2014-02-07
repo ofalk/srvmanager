@@ -5,12 +5,11 @@ template:
         footer: footer.tt
         css:
                 'sm.css':
-                'bootstrap.css':
-                'bootstrap-responsive.css':
+                'bootstrap.min.css':
+                'bootstrap-theme.min.css':
         js:
-                - 'http://code.jquery.com/jquery-1.10.1.min.js'
-                - 'http://code.jquery.com/jquery-migrate-1.2.1.min.js'
-                - 'bootstrap-min.js'
+                - 'jquery-1.11.0.min.js'
+                - 'bootstrap.min.js'
 
 database:
         dsn: "dbi:mysql:dbname=srvmanager;host=mysql01.beer.linux-kernel.at"

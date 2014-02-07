@@ -10,16 +10,16 @@
 
 	<tr>
 		<td>[% h.get_name('hostname') %]</td>
-		<td><input type="[% h.datatype2inputtype(h.data_type('hostname')) %]" id="hostname" maxlength="[% h.size('hostname') %]" value="[% result.hostname %]" class="span10"/></td>
+		<td><input type="[% h.datatype2inputtype(h.data_type('hostname')) %]" id="hostname" maxlength="[% h.size('hostname') %]" value="[% result.hostname %]" class="col-md-10"/></td>
 	</tr>
 	<tr>
 		<td>[% h.get_name('cat_domain') %]</td>
 		<td>
-			<select class="span10">
+			<select class="col-md-10">
 				[% h.Dumper(c.app.schema.resultset('CatStatus')) %]
 			</select>
 		</td>
-<!--		<td><input type="[% h.datatype2inputtype(h.data_type('hostname')) %]" id="hostname" maxlength="[% h.size('hostname') %]" value="[% result.hostname %]" class="span10"/></td>
+<!--		<td><input type="[% h.datatype2inputtype(h.data_type('hostname')) %]" id="hostname" maxlength="[% h.size('hostname') %]" value="[% result.hostname %]" class="col-md-10"/></td>
 		<td><input type="[% result.cat_domain.name %]</td></tr>
 -->
 	<tr>

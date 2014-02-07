@@ -1,7 +1,7 @@
 <form action="[% h.url_for('/cluster/query') %]" method="post">
 	<fieldset>
-		<div class="input-append">
-			<input style="width:400px;" class="span2" name="q" type="text" id="q" placeholder="Name/Description" value="[% q IF q %]">
+		<div class="input-group">
+			<input style="width:400px;" class="col-md-2" name="q" type="text" id="q" placeholder="Name/Description" value="[% q IF q %]">
 			<button class="btn" type="submit">Search</button>
 		</div>
 		<br/>
