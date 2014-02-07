@@ -16,14 +16,25 @@
 		<td>[% h.get_name('cat_domain') %]</td>
 		<td>
 			<select class="col-md-10">
-				[% h.Dumper(c.app.schema.resultset('CatStatus')) %]
+<!-- TODO - fetch values from DB -->
+				[% FOREACH dn = [ 'bla' ] %]
+					<option [% 'selected' IF dn == result.cat_domain.name %]>[% dn %]</option>
+				[% END %]
 			</select>
 		</td>
 <!--		<td><input type="[% h.datatype2inputtype(h.data_type('hostname')) %]" id="hostname" maxlength="[% h.size('hostname') %]" value="[% result.hostname %]" class="col-md-10"/></td>
 		<td><input type="[% result.cat_domain.name %]</td></tr>
 -->
 	<tr>
-		<td>[% h.get_name('cat_status') %]</td><td>[% result.cat_status.name %]</td></tr>
+		<td>[% h.get_name('cat_status') %]</td>
+		<td>
+			<select class="col-md-10">
+				[% FOREACH sn = [ 'In Use' 'Stored' 'Orderd' 'Disposed' 'to be disposed' 'Name Reserved' ] %]
+					<option [% 'selected' IF sn == result.cat_status.name %]>[% sn %]</option>
+				[% END %]
+			</select>
+		</td>
+	</tr>
 	<tr>
 		<td>[% h.get_name('cat_product_category') %]</td><td>[% result.cat_product_category.name %]</td></tr>
 	<tr>

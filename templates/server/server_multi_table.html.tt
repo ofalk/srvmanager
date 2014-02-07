@@ -4,13 +4,14 @@
 	<tr>
 		<th></th>
 		<th>Hostname</th>
-		<th>Status</th>
+		<th class="hidden-xs">Status</th>
+		<th class="visible-xs">S</th>
 		<th>Description</th>
-		<th>Domain</th>
-		<th>Application</th>
-		<th>Server Model</th>
-		<th>OS</th>
-		<th>IP</th>
+		<th class="visible-lg">Domain</th>
+		<th class="visible-lg">Application</th>
+		<th class="visible-lg">Server Model</th>
+		<th class="hidden-xs hidden-sm">OS</th>
+		<th class="hidden-xs hidden-sm">IP</th>
 		<th>Cluster</th>
 	</tr>
 	</thead>
@@ -20,26 +21,25 @@
 		<td><a href="[% h.url_for("/server/edit/$r.server_id") %]"><i class="glyphicon glyphicon-edit"></a></td>
 		<td><a href="[% h.url_for("/server/id/$r.server_id") %]">[% r.hostname %]</a></td>
 		<td>
-			<span class="label
-				[% SWITCH r.cat_status.name %]
-					[% CASE 'In Use' %]label-success
-					[% CASE 'Stored' %]
-					[% CASE 'Ordered' %]label-info
-					[% CASE 'Disposed' %]label-primary
-					[% CASE 'to be disposed' %]label-warning
-					[% CASE 'Name Reserved' %]label-info
-					[% CASE %]label-danger
-				[% END %]
-				">
-				[% r.cat_status.name %]
-			</span>
+			[% SWITCH r.cat_status.name %]
+				[% CASE 'In Use' %][% ltype = 'label-success' lshort = 'U' %]
+				[% CASE 'Stored' %][% ltype = '' lshort = 'S' %]
+				[% CASE 'Ordered' %][% ltype = 'label-info' lshort = 'O' %]
+				[% CASE 'Disposed' %][% ltype = 'label-primary' lshort = 'D' %]
+				[% CASE 'to be disposed' %][% ltype = 'label-warning' lshort = 'tD' %]
+				[% CASE 'Name Reserved' %][% ltype = 'label-info' lshort = 'R' %]
+				[% CASE %][% ltype = 'label-danger' lshort = '!' %]
+			[% END %]
+
+			<span class="label [% ltype %] hidden-xs">[% r.cat_status.name %]</span>
+			<span class="label [% ltype %] visible-xs">[% lshort %]</span>
 		</td>
 		<td>[% r.description %]</td>
-		<td>[% r.cat_domain.name %]</td>
-		<td>[% r.application %]</td>
-		<td>[% r.cat_server_model.name %]</td>
-		<td>[% r.cat_os_version.name %]</td>
-		<td>[% r.ip_address %]</td>
+		<td class="visible-lg">[% r.cat_domain.name %]</td>
+		<td class="visible-lg">[% r.application %]</td>
+		<td class="visible-lg">[% r.cat_server_model.name %]</td>
+		<td class="hidden-xs hidden-sm">[% r.cat_os_version.name %]</td>
+		<td class="hidden-xs hidden-sm">[% r.ip_address %]</td>
 		<td>[% r.cluster.name %]</td>
 	</tr>
 	[% END %]
