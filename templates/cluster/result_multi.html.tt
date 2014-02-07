@@ -1,0 +1,4 @@
+<div id="result">
+[% INCLUDE cluster/search.html.tt %]
+[% INCLUDE cluster/cluster_multi_table.html.tt %]
+</div>

@@ -1,12 +1,12 @@
-<table class="server">
-	<tr><td>
-		<form id="search-form" action="[% h.url_for('/server/query') %]" method="post">
-			<fieldset>
-				<input name="q" type="text" id="q" placeholder="Servername/IP/Description/Application/Serial/Tag" value="[% q IF q %]">
-				<button type="submit" class="search_button">Search</button>
-				<br/>
-				<input name="disposed" type="checkbox" id="disposed" [% "checked" IF disposed %] value="yes"/>Show disposed servers
-			</fieldset>
-		</form>
-	</td></tr>
-</table>
+<form action="[% h.url_for('/server/query') %]" method="post">
+	<fieldset>
+		<div class="input-append">
+			<input style="width:400px;" class="span2" name="q" type="text" id="q" placeholder="Servername/IP/Description/Application/Serial/Tag" value="[% q IF q %]">
+			<button class="btn" type="submit">Search</button>
+		</div>
+		<br/>
+		<label class="checkbox">
+			<input name="disposed" type="checkbox" id="disposed" [% "checked" IF disposed %] value="yes"/>Show disposed servers
+		</label>
+	</fieldset>
+</form>

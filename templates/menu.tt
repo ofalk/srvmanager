@@ -7,7 +7,7 @@
 
 	<p/>
 
-	<div class='menu_heading'>Cluster - not working yet!!!</div><p/>
+	<a class='menu_heading'>Cluster - not working yet!!!</div><p/>
 	<ul>
 		<li><a class='quiet' href='[% h.url_for('cluster') %]'><img src='/static/images/computer_link.png'/>Cluster</a></li>
 		<li><a class='quiet' href='[% h.url_for('clusterpackage') %]'><img src='/static/images/package.png'/>Packages</a></li>

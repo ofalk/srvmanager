@@ -1,14 +1,44 @@
-<!-- JS -->
-[% FOREACH js = c.app.config.template.js %]
-	[% UNLESS js.match('http:\/\/') %]
-		<script type="text/javascript" src="/static/js/[% js %]"></script>
-	[% ELSE %]
-		<script type="text/javascript" src="[% js %]"></script>
-	[% END %]
-[% END %]
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  
+<meta name="apple-mobile-web-app-capable" content="yes">  
+<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
 <!-- CSS -->
 [% FOREACH css = c.app.config.template.css.keys %]
-    <link rel="stylesheet" href="/static/css/[% css %]" type="text/css" media="[% c.app.config.template.css.$css.media %]"/>
+	<link href="/static/css/[% css %]" rel="stylesheet" [% IF c.app.config.template.css.$css.media %]media="[% c.app.config.template.css.$css.media %]"[% END %]>
 [% END %]
+    <style type="text/css">
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 60px;
+      }
+      #footer {
+        background-color: #f5f5f5;
+      }
+      #wrap > .container {
+        padding-top: 60px;
+      }
+      .container .credit {
+        margin: 20px 0;
+      }
+      html,
+      body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
 
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
+
+    </style>
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="../assets/js/html5shiv.js"></script>
+<![endif]-->

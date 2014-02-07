@@ -1,16 +1,16 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>[% html_title %]</title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>[% html_title || c.app.config.name %]</title>
 	[% PROCESS 'common_htmlhead.tt' %]
 </head>
 <body>
 [% FOREACH mes = c.stash.message %]
 	[% x = c.humane_stash(mes) %]
 [% END %]
-	<div id="container" style="width:100%">
-	<div class='left-menu' style="width:170px;float:left;">
-		[% PROCESS 'menu.tt' %]
-	</div>
-	<div id="content" style="float:left;>
+	<div id="wrap">
+		[% PROCESS 'top_menu.tt' %]
+		<div class="container">

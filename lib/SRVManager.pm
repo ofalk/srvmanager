@@ -31,23 +31,19 @@ sub startup {
 	$self->helper(Dumper => sub { my $self = shift; Dumper(shift()) });
 	$self->helper(column_info => sub {
 		my $self = shift;
-		my $res = shift;
-		$res->result_source->column_info(shift);
+		$self->{stash}->{result}->result_source->column_info(shift);
 	});
 	$self->helper(is_nullable => sub {
 		my $self = shift;
-		my $res = shift;
-		$res->result_source->column_info(shift)->{is_nullable};
+		$self->{stash}->{result}->result_source->column_info(shift)->{is_nullable};
 	});
 	$self->helper(data_type => sub {
 		my $self = shift;
-		my $res = shift;
-		$res->result_source->column_info(shift)->{data_type};
+		$self->{stash}->{result}->result_source->column_info(shift)->{data_type};
 	});
 	$self->helper(size => sub {
 		my $self = shift;
-		my $res = shift;
-		$res->result_source->column_info(shift)->{size};
+		$self->{stash}->{result}->result_source->column_info(shift)->{size};
 	});
 	$self->helper(get_name => sub {
 		# Language stuff / translations should come here.
@@ -56,6 +52,16 @@ sub startup {
 		my $col = shift;
 		# take care about the context/the class! We are in a requst call here. Therefore we have to use ->{app}!! 
 		$self->{app}->{config}->{column_names}->{$sn}->{$col} || $col;
+	});
+	$self->helper(datatype2inputtype => sub {
+		my $self = shift;
+		my $s = shift;
+		if($s eq 'varchar') { return 'text' }
+		elsif($s eq 'integer') { return 'number' }
+		elsif($s eq 'date') { return 'datetime' }
+		elsif($s eq 'text') { return 'textarea' }
+		elsif($s eq 'tinyint') { return 'number' }
+		else { return 'UNKNOWN' }
 	});
 
 	# Only with Perl 5.14 and l8ter
@@ -91,6 +97,10 @@ sub startup {
 	$r->get('/server')->to('server#index');
 	$r->get('/server/:action/*q')->to('server#');
 	$r->post('/server/query')->to('server#query');
+
+	$r->get('/cluster')->to('cluster#index');
+	$r->get('/cluster/:action/*q')->to('cluster#');
+	$r->post('/cluster/query')->to('cluster#query');
 }
 
 1;

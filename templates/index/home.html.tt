@@ -1,8 +1,11 @@
-        <div class="span-28 viewTitleBorders">
-          <h1 class='loud'>Welcome to SRVManager (aka SM, aka ServerManager)</h1>
-        </div>
-        <div class="span-20">
-          The application has been built with:</br>
+        <div class="container">
+		<div class="hero-unit">
+			<h1>Welcome to SM!</h1>
+			<p>(aka SRVManager, aka ServerManager)</p>
+                </div>
+
+	<p class="lead">
+          The application has been built with:<br/>
           <ul>
             <li><a href="http://perl.com">Perl</a></li>
             <li><a href="http://mojolicio.us">Mojolicious</a></li>
@@ -12,4 +15,5 @@
           <ul>
             <li><a href="http://github.com/ofalk">ofalk @ github</a></li>
           </ul>
-        </div>
+        </p>
+	</div>

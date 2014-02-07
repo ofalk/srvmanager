@@ -1,0 +1,32 @@
+<table class="cluster_multi table table-striped table-bordered table-hover table-condensed" id="cluster_multi">
+[% IF result.count %]
+	<thead>
+	<tr>
+		<th>ID</th>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Software</th>
+		<th>Software Version</th>
+		<th>Status</th>
+	</tr>
+	</thead>
+
+	<tbody>
+	[% WHILE (r = result.next) %]
+	<tr>
+		<td><a href="[% h.url_for("/cluster/id/$r.cluster_id") %]">[% r.cluster_id %]</a></td>
+		<td><a href="[% h.url_for("/cluster/id/$r.cluster_id") %]">[% r.name %]</a></td>
+		<td>[% r.description %]</td>
+		<td>[% r.cat_cluster_software.name %]</td>
+		<td>[% r.software_version %]</td>
+		<td>[% r.cat_status.name %]</td>
+	</tr>
+	[% END %]
+	</tbody>
+</table>
+[% ELSE %]
+	<div class="alert">
+		<button type="button" class="close" data-dismiss="alert">x</button>
+		<strong>Warning!</strong> Nothing found!
+	</div>
+[% END %]

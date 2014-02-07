@@ -45,6 +45,27 @@ __PACKAGE__->add_columns(
   },
   "ip_address",
   { data_type => "varchar", is_nullable => 1, size => 45 },
+  "tags",
+  { data_type => "varchar", is_nullable => 1, size => 1024 },
+  "port_config",
+  { data_type => "varchar", is_nullable => 1, size => 1024 },
+  "type",
+  {
+    data_type => 'enum',
+    is_nullable => 1,
+    extra => {
+      list => [
+        'SAP',
+        'Oracle',
+        'DB2',
+        'Other',
+        'SAP Application Server',
+        'SAP Java Application Server (msprot)',
+        'SAP Java Application Server (http)',
+        'Oracle Standby'
+      ],
+    },
+  },
 );
 __PACKAGE__->set_primary_key("cluster_package_id");
 __PACKAGE__->belongs_to(

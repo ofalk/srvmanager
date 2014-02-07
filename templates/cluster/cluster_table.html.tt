@@ -1,0 +1,23 @@
+<table class="cluster table table-striped table-bordered table-hover table-condensed" id="cluster">
+[% IF result %]
+	<tr>
+		<th>Field</th><th>Value</th></tr>
+	<tr>
+		<td>Name</td>
+		<td>[% result.name %]</td>
+	</tr>
+	<tr>
+		<td>ID</td><td>[% result.cluster_id %]</td></tr>
+	<tr>
+		<td>Status</td><td>[% result.cat_status.name %]</td></tr>
+	<tr>
+		<td>Description</td><td>[% result.description %]</td></tr>
+	<tr>
+		<td>Software</td><td>[% result.cat_cluster_software.name %]</td></tr>
+	<tr>
+		<td>Software Version</td><td>[% result.software_version %]</td></tr>
+[% ELSE %]
+	<tr><th colspan="2">Nothing found.</th></tr>
+[% END %]
+	<tr><td colspan="2" class="backbutton"><a style="cursor:pointer;" onclick="javascript:window.history.back()">Back</a></td></tr>
+</table>

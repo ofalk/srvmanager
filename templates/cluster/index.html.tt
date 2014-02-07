@@ -1,0 +1,1 @@
+[% INCLUDE cluster/search.html.tt %]

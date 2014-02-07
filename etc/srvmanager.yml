@@ -4,15 +4,13 @@ template:
         header: header.tt
         footer: footer.tt
         css:
-                'screen.css':
-                        media: 'screen, projection'
                 'sm.css':
-                        media: 'screen, projection'
-                'print.css':
-                        media: 'print'
+                'bootstrap.css':
+                'bootstrap-responsive.css':
         js:
                 - 'http://code.jquery.com/jquery-1.10.1.min.js'
                 - 'http://code.jquery.com/jquery-migrate-1.2.1.min.js'
+                - 'bootstrap-min.js'
 
 database:
         dsn: "dbi:mysql:dbname=srvmanager;host=mysql01.beer.linux-kernel.at"
@@ -63,7 +61,7 @@ column_names:
                 reboot_notes: 'Reboot notes'
                 patch_notes: 'Patch notes'
                 cat_patchtime: 'Patchtime'
-                asset_id: 'Asset ID'
                 documentation_url: 'Documentation URL'
+                port_config: 'Special port configuration'
                 tags: 'Tags (space seperated list)'
                 

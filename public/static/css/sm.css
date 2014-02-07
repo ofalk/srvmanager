@@ -1,89 +1,19 @@
-#server {
-	color:#000000;
-	background-color:#e6efaa;
-	border-color:#eeeeee;
-	border-top-width:1px;
-	border-right-width:1px;
-	border-bottom-width:1px;
-	border-left-width:1px;
-	width: 1000px;
-}
 #server tr > td:first-child {
 	font-weight:bold;
 	width:200px;
 }
-#server tr > td:last-of-type {
-	border-right: 1px solid #AAAAAA;
-}
-#server tr > th:last-of-type {
-	border-right: 1px solid #AAAAAA;
-}
-#server th {
-	border-top: 1px solid #AAAAAA;
-	border-bottom: 1px solid #AAAAAA;
-	border-left: 1px solid #AAAAAA;
-	background-color:#11bfaa;
-}
-
-#server td {
-	border-bottom: 1px solid #AAAAAA;
-	border-left: 1px solid #AAAAAA;
-}
-
-#server tr > td:last-of-type-child {
-	border-right: 1px solid #AAAAAA;
-}
-
-#server_multi {
-	color:#000000;
-	background-color:#e6efaa;
-	border-color:#eeeeee;
-	border-top-width:1px;
-	border-right-width:1px;
-	border-bottom-width:1px;
-	border-left-width:1px;
-	width: 1000px;
+#cluster tr > td:first-child {
+	font-weight:bold;
+	width:200px;
 }
 
 #server_multi tr > td:first-child {
 	font-weight:bold;
 }
-#server_multi tr > td:last-of-type {
-	border-right: 1px solid #AAAAAA;
-}
-#server_multi tr > th:last-of-type {
-	border-right: 1px solid #AAAAAA;
-}
-#server_multi th {
-	border-top: 1px solid #AAAAAA;
-	border-bottom: 1px solid #AAAAAA;
-	border-left: 1px solid #AAAAAA;
-	background-color:#11bfaa;
-}
-
-#server_multi td {
-	border-bottom: 1px solid #AAAAAA;
-	border-left: 1px solid #AAAAAA;
-}
-
-#server_multi tr > td:last-of-type-child {
-	border-right: 1px solid #AAAAAA;
+#cluster_multi tr > td:first-child {
+	font-weight:bold;
 }
 
 td.backbutton {
 	text-align:right;
-}
-
-#search-form {
-	width:400;
-	font-size: 90%;
-}
-
-#search-form input {
-	width:300px;
-	font-size: 90%;
-}
-
-#search-form button {
-	font-size: 90%;
 }

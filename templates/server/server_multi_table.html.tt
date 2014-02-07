@@ -1,25 +1,37 @@
-<table class="server_multi" id="server_multi">
+<table class="server_multi table table-striped table-bordered table-hover table-condensed" id="server_multi">
 [% IF result.count %]
+	<thead>
 	<tr>
-		<th>ID</th>
+		<th></th>
 		<th>Hostname</th>
-		<th>Domain</th>
 		<th>Status</th>
 		<th>Description</th>
+		<th>Domain</th>
 		<th>Application</th>
 		<th>Server Model</th>
 		<th>OS</th>
 		<th>IP</th>
 		<th>Cluster</th>
 	</tr>
+	</thead>
 
 	[% WHILE (r = result.next) %]
 	<tr>
-		<td><a href="[% h.url_for("/server/id/$r.server_id") %]">[% r.server_id %]</a></td>
+		<td><a href="[% h.url_for("/server/edit/$r.server_id") %]"><i class="icon-edit"></td>
 		<td><a href="[% h.url_for("/server/id/$r.server_id") %]">[% r.hostname %]</a></td>
-		<td>[% r.cat_domain.name %]</td>
-		<td>[% r.cat_status.name %]</td>
+		<td>
+			[% SWITCH r.cat_status.name %]
+				[% CASE 'In Use' %]<span class="badge badge-success">[% r.cat_status.name %]</span> 
+				[% CASE 'Stored' %]<span class="badge">[% r.cat_status.name %]</span> 
+				[% CASE 'Ordered' %]<span class="badge badge-info">[% r.cat_status.name %]</span> 
+				[% CASE 'Disposed' %]<span class="badge badge-inverse">[% r.cat_status.name %]</span> 
+				[% CASE 'to be disposed' %]<span class="badge badge-important">[% r.cat_status.name %]</span> 
+				[% CASE 'Name Reserved' %]<span class="badge badge-warning">[% r.cat_status.name %]</span> 
+				[% CASE %]<span class="badge badge-warning">[% r.cat_status.name %]</span> 
+			[% END %]
+		</td>
 		<td>[% r.description %]</td>
+		<td>[% r.cat_domain.name %]</td>
 		<td>[% r.application %]</td>
 		<td>[% r.cat_server_model.name %]</td>
 		<td>[% r.cat_os_version.name %]</td>
@@ -27,7 +39,10 @@
 		<td>[% r.cluster.name %]</td>
 	</tr>
 	[% END %]
-[% ELSE %]
-	<tr><th colspan="10">Nothing found.</th></tr>
-[% END %]
 </table>
+[% ELSE %]
+	<div class="alert">
+		<button type="button" class="close" data-dismiss="alert">x</button>
+		<strong>Warning!</strong> Nothing found!
+	</div>
+[% END %]

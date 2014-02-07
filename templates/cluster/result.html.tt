@@ -1,0 +1,3 @@
+<div id="result">
+[% INCLUDE cluster/cluster_table.html.tt %]
+</div>

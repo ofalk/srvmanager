@@ -1,0 +1,77 @@
+    <div id="navbar" class="navbar navbar-inverse navbar-fixed-top">
+      <div id="navbar-inner" class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="/">[% c.app.config.name %][% IF html_title %] - [% html_title %][% END %]</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li [% "class=\"active\"" IF controller == 'server' %]><a href="[% h.url_for('server') %]"><img src='/static/images/server.png'/> Server</a></li>
+              <li class="dropdown[% " active" IF controller == 'cluster' %]">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cluster<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="[% h.url_for('/cluster') %]"><img src='/static/images/computer_link.png'/> Cluster</a></li>
+                  <li><a href="[% h.url_for('/cluster/packages') %]"><img src='/static/images/package.png'/> Packages</a></li>
+                  <li><a href="[% h.url_for('/cluster/software') %]"><img src='/static/images/shield.png'/> Software</a></li>
+                </ul>
+              </li>
+              <li [% "class=\"active\"" IF controller == 'storage' %] class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Storage<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="[% h.url_for('storage/storages') %]"><img src='/static/images/database.png'/> Storages</a></li>
+                  <li><a href="[% h.url_for('storage/modesl') %]"><img src='/static/images/database.png'/> Models</a></li>
+                </ul>
+              </li>
+              <li [% "class=\"active\"" IF controller == 'categories' %] class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="[% h.url_for('categories/sites') %]"><img src='/static/images/world.png'/> Sites</a></li>
+                  <li><a href="[% h.url_for('categories/locations') %]"><img src='/static/images/map.png' width='16px'/> Locations</a></li>
+
+                  <li><a href="[% h.url_for('categories/states') %]"><img src='/static/images/tick.png'/> States</a></li>
+
+                  <li><a href="[% h.url_for('categories/vendors') %]"><img src='/static/images/server.png'/> Vendors</a></li>
+                  <li><a href="[% h.url_for('categories/models') %]"><img src='/static/images/computer.png'/> Models</a></li>
+                  <li><a href="[% h.url_for('categories/productcategories') %]"><img src='/static/images/user_suit.png'/> Product Catagories</a></li>
+                  <li><a href="[% h.url_for('categories/cputypes') %]"><img src='/static/images/database.png'/> CPU types</a></li>
+
+                  <li><a href="[% h.url_for('categories/domains') %]"><img src='/static/images/sitemap.png'/> Domains</a></li>
+
+                  <li><a href="[% h.url_for('categories/patchtimes') %]"><img src='/static/images/pill.png'/> Patchtimes</a></li>
+                  <li><a href="[% h.url_for('categories/supportlevels') %]"><img src='/static/images/wrench.png'/> Supportlevels</a></li>
+
+                  <li><a href="[% h.url_for('categories/osversions') %]"><img src='/static/images/database.png'/> OS versions</a></li>
+                  <li><a href="[% h.url_for('categories/osarchs') %]"><img src='/static/images/database.png'/> OS Architectures</a></li>
+                  <li><a href="[% h.url_for('categories/oscategories') %]"><img src='/static/images/database.png'/> OS Categories</a></li>
+
+                  <li><a href="[% h.url_for('categories/accountingtypes') %]"><img src='/static/images/money.png'/> Accountingtypes</a></li>
+                  <li><a href="[% h.url_for('categories/asp') %]"><img src='/static/images/coins.png'/> ASP</a></li>
+                </ul>
+              </li>
+              <li [% "class=\"active\"" IF controller == 'admin' %] class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="[% h.url_for('admin/groups') %]"><img src='/static/images/group.png'/> Groups</a></li>
+                  <li><a href="[% h.url_for('admin/roles') %]"><img src='/static/images/group.png'/> Roles</a></li>
+                  <li><a href="[% h.url_for('admin/user2group') %]"><img src='/static/images/group_link.png'/> User/group mapping</a></li>
+                  <li><a href="[% h.url_for('admin/departments') %]"><img src='/static/images/chart_organisation.png'/> Departments</a></li>
+                  <li><a href="[% h.url_for('admin/user') %]"><img src='/static/images/user_suit.png'/> User</a></li>
+                </ul>
+              </li>
+
+            </ul>
+<!-- Not needed yet
+            <form class="navbar-form pull-right">
+              <input class="span2" type="text" placeholder="Email">
+              <input class="span2" type="password" placeholder="Password">
+              <button type="submit" class="btn">Sign in</button>
+            </form>
+-->
+            <p class="navbar-text pull-right"><a href="/profile" class="navbar-link">Admin</a></p>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>

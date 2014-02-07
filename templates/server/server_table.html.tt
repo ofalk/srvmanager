@@ -1,4 +1,4 @@
-<table class="server" id="server">
+<table class="server table table-striped table-bordered table-hover table-condensed" id="server">
 [% IF result %]
 	<tr>
 		<th>Field</th><th>Value</th></tr>
@@ -7,7 +7,7 @@
 		<td>[% result.hostname %]</td>
 	</tr>
 	<tr>
-		<td>ID</td><td align="right">[% result.server_id %]</td></tr>
+		<td>ID</td><td>[% result.server_id %]</td></tr>
 	<tr>
 		<td>Domain</td><td>[% result.cat_domain.name %]</td></tr>
 	<tr>
@@ -85,7 +85,7 @@
 	<tr><td>Patch Notes</td><td>[% result.patch_notes %]</td></tr>
 	<tr><td>Patch Time</td><td>[% result.patchtime.name %]</td></tr>
 
-	<tr><td>Asset ID</td><td>[% result.asset_id %]</td></tr>
+	<tr><td>Special ports</td><td>[% result.port_config %]</td></tr>
 
 	<tr><td>Documentation URL</td><td><a href="[% result.documentation_url %]">[% result.documentation_url %]</a></td></tr>
 

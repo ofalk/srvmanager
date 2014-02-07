@@ -1,15 +1,27 @@
-<table class="server" id="server">
+<form>
+<table class="server table table-striped table-bordered table-hover table-condensed" id="server">
 [% IF result %]
 	<tr>
 		<th>Field</th><th>Value</th></tr>
 	<tr>
+		<td>[% h.get_name('server_id') %]</td>
+		<td>[% result.server_id %]</td></tr>
+	<tr>
+
+	<tr>
 		<td>[% h.get_name('hostname') %]</td>
-		<td>[% result.hostname %]</td>
+		<td><input type="[% h.datatype2inputtype(h.data_type('hostname')) %]" id="hostname" maxlength="[% h.size('hostname') %]" value="[% result.hostname %]" class="span10"/></td>
 	</tr>
 	<tr>
-		<td>[% h.get_name('server_id') %]</td><td>[% result.server_id %]</td></tr>
-	<tr>
-		<td>[% h.get_name('cat_domain') %]</td><td>[% result.cat_domain.name %]</td></tr>
+		<td>[% h.get_name('cat_domain') %]</td>
+		<td>
+			<select class="span10">
+				[% h.Dumper(c.app.schema.resultset('CatStatus')) %]
+			</select>
+		</td>
+<!--		<td><input type="[% h.datatype2inputtype(h.data_type('hostname')) %]" id="hostname" maxlength="[% h.size('hostname') %]" value="[% result.hostname %]" class="span10"/></td>
+		<td><input type="[% result.cat_domain.name %]</td></tr>
+-->
 	<tr>
 		<td>[% h.get_name('cat_status') %]</td><td>[% result.cat_status.name %]</td></tr>
 	<tr>
@@ -108,7 +120,7 @@
 	</tr>
 
 	<tr>
-		<td>[% h.get_name('asset_id') %]</td><td>[% result.asset_id %]</td>
+		<td>[% h.get_name('port_config') %]</td><td>[% result.port_config %]</td>
 	</tr>
 
 	<tr>
@@ -122,3 +134,4 @@
 [% END %]
 	<tr><td colspan="2" class="backbutton"><a style="cursor:pointer;" onclick="javascript:window.history.back()">Back</a></td></tr>
 </table>
+</form>
