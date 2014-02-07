@@ -32,13 +32,6 @@ __PACKAGE__->has_many(
   { "foreign.cat_vendor_id" => "self.vendor_id" },
   { cascade_copy => 0, cascade_delete => 0 },
 );
-__PACKAGE__->has_many(
-  "cat_storage_models",
-  "Schema::Result::CatStorageModel",
-  { "foreign.cat_vendor_id" => "self.vendor_id" },
-  { cascade_copy => 0, cascade_delete => 0 },
-);
-
 
 # Created by DBIx::Class::Schema::Loader v0.07035 @ 2013-07-10 14:53:47
 # DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:jyX8QAy4C+L0Oc4IjWaXpg

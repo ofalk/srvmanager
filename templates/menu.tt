@@ -47,10 +47,4 @@
 	</ul>
 
 	<p/>
-
-	<div class='menu_heading'>Storage - not working yet!!!</div><p/>
-	<ul>
-		<li><a class='quiet' href='[% h.url_for('storages') %]'><img src='/static/images/database.png'/>Storages</a></li>
-		<li><a class='quiet' href='[% h.url_for('storagemodels') %]'><img src='/static/images/database.png'/>Storage Models</a></li>
-	</ul>
 </div>

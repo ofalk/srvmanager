@@ -30,12 +30,6 @@ __PACKAGE__->has_many(
   { "foreign.cat_site_id" => "self.site_id" },
   { cascade_copy => 0, cascade_delete => 0 },
 );
-__PACKAGE__->has_many(
-  "storages",
-  "Schema::Result::Storage",
-  { "foreign.cat_site_id" => "self.site_id" },
-  { cascade_copy => 0, cascade_delete => 0 },
-);
 
 
 # Created by DBIx::Class::Schema::Loader v0.07035 @ 2013-07-10 14:53:47
