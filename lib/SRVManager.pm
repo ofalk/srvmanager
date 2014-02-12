@@ -14,11 +14,11 @@ sub startup {
 	use Data::Dumper;
 	warn Dumper($self->{config});
 
-	$self->plugin('DBViewer',
-		dsn		=> $self->{config}->{database}->{dsn},
-		user		=> $self->{config}->{database}->{user},
-		password	=> $self->{config}->{database}->{password},
-	);
+#	$self->plugin('DBViewer',
+#		dsn		=> $self->{config}->{database}->{dsn},
+#		user		=> $self->{config}->{database}->{user},
+#		password	=> $self->{config}->{database}->{password},
+#	);
 
 	$self->{schema} = Schema->connect(
 		$self->{config}->{database}->{dsn},
@@ -50,7 +50,7 @@ sub startup {
 		my $self = shift;
 		my $sn = $self->{stash}->{result}->result_source->source_name;
 		my $col = shift;
-		# take care about the context/the class! We are in a requst call here. Therefore we have to use ->{app}!! 
+		# take care about the context/the class! We are in a request call here. Therefore we have to use ->{app}!! 
 		$self->{app}->{config}->{column_names}->{$sn}->{$col} || $col;
 	});
 	$self->helper(datatype2inputtype => sub {
@@ -92,15 +92,31 @@ sub startup {
 	# Router
 	my $r = $self->routes;
 
-	# Normal route to controller
+	# Index
 	$r->get('/')->to('index#home');
+
+	# Server
 	$r->get('/server')->to('server#index');
 	$r->get('/server/:action/*q')->to('server#');
-	$r->post('/server/query')->to('server#query');
 
+	$r->post('/server/query')->to('server#query');
+	$r->get('/server/query')->to('server#query');
+
+	# Cluster
 	$r->get('/cluster')->to('cluster#index');
 	$r->get('/cluster/:action/*q')->to('cluster#');
+
 	$r->post('/cluster/query')->to('cluster#query');
+	$r->get('/cluster/query')->to('cluster#query');
+
+	# CatDomain
+	$r->get('/catdomain')->to('CatDomain#index');
+	$r->get('/catdomain/:action/*id')->to('CatDomain#');
+
+	$r->post('/catdomain/query')->to('CatDomain#query');
+	$r->get('/catdomain/query')->to('CatDomain#query');
+
+	$r->post('/catdomain/save')->to('CatDomain#save');
 }
 
 1;
