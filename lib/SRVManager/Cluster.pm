@@ -64,7 +64,7 @@ sub edit {
 	$result ? $self->stash(message => "Edit server by server id. You requested id: $id") :
 		  $self->stash(message => "No result found for ID '$id'!");
 	$self->render(
-		'server/edit',
+		'cluster/edit',
 		result => $result,
 	);
 }
