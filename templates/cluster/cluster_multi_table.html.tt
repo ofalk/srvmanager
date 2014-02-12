@@ -2,24 +2,29 @@
 [% IF result.count %]
 	<thead>
 	<tr>
-		<th>ID</th>
+		<th/>
 		<th>Name</th>
+		<th class="hidden-xs">Status</th>
+		<th class="visible-xs">S</th>
 		<th>Description</th>
-		<th>Software</th>
-		<th>Software Version</th>
-		<th>Status</th>
+		<th class="hidden-xs">Software</th>
+		<th class="hidden-xs hidden-sm">Software Version</th>
 	</tr>
 	</thead>
 
 	<tbody>
 	[% WHILE (r = result.next) %]
 	<tr>
-		<td><a href="[% h.url_for("/cluster/id/$r.cluster_id") %]">[% r.cluster_id %]</a></td>
+		<td width="20px"><a href="[% h.url_for("/cluster/edit/$r.cluster_id") %]"><i class="glyphicon glyphicon-edit"></a></td>
 		<td><a href="[% h.url_for("/cluster/id/$r.cluster_id") %]">[% r.name %]</a></td>
+		<td>
+			[% PROCESS 'status_name.tt' name = r.cat_status.name %]
+			<span class="label [% ltype %] hidden-xs">[% r.cat_status.name %]</span>
+			<span class="label [% ltype %] visible-xs">[% lshort %]</span>
+		</td>
 		<td>[% r.description %]</td>
-		<td>[% r.cat_cluster_software.name %]</td>
-		<td>[% r.software_version %]</td>
-		<td>[% r.cat_status.name %]</td>
+		<td class="hidden-xs">[% r.cat_cluster_software.name %]</td>
+		<td class="hidden-xs hidden-sm">[% r.software_version %]</td>
 	</tr>
 	[% END %]
 	</tbody>

@@ -1,0 +1,10 @@
+<!-- [% name %] -->
+[% SWITCH name %]
+	[% CASE 'In Use' %][% ltype = 'label-success' lshort = 'U' %]
+	[% CASE 'Stored' %][% ltype = 'label-info' lshort = 'S' %]
+	[% CASE 'Ordered' %][% ltype = 'label-info' lshort = 'O' %]
+	[% CASE 'Disposed' %][% ltype = 'label-primary' lshort = 'D' %]
+	[% CASE 'to be disposed' %][% ltype = 'label-warning' lshort = 'tD' %]
+	[% CASE 'Name Reserved' %][% ltype = 'label-info' lshort = 'R' %]
+	[% CASE %][% ltype = 'label-danger' lshort = '!' %]
+[% END %]
