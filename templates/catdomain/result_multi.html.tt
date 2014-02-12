@@ -1,0 +1,4 @@
+<div id="result">
+[% INCLUDE catdomain/search.html.tt %]
+[% INCLUDE catdomain/catdomain_multi_table.html.tt %]
+</div>

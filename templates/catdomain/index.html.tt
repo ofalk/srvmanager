@@ -1,0 +1,1 @@
+[% INCLUDE catdomain/search.html.tt %]

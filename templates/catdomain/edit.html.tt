@@ -1,0 +1,3 @@
+<div id="result">
+[% INCLUDE catdomain/catdomain_table_edit.html.tt %]
+</div>

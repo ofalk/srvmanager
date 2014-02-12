@@ -1,0 +1,23 @@
+<form id="domain_edit" method="post" action="[% h.url_for("/catdomain/save") %]">
+<table class="domain table table-striped table-bordered table-hover table-condensed" id="domain">
+[% IF result %]
+	<tr>
+		<th>Field</th><th>Value</th></tr>
+	<tr>
+		<td>ID</td>
+		<td>[% result.domain_id %]<input type="hidden" name="domain_id" value="[% result.domain_id %]"></td>
+	<tr>
+
+	<tr>
+		<td>[% h.get_name('name') %]</td>
+		<td><input type="[% h.datatype2inputtype(h.data_type('name')) %]" id="name" maxlength="[% h.size('name') %]" name="name" value="[% result.name %]" class="col-md-10"/></td>
+	</tr>
+[% ELSE %]
+	<tr><th colspan="2">Nothing found.</th></tr>
+[% END %]
+	<tr><td colspan="2" align="right">
+		<a href="#" onclick="domain_edit.submit()">Save</a>
+		<a style="cursor:pointer;" onclick="javascript:window.history.back()">Cancel</a>
+	<tr>
+</table>
+</form>

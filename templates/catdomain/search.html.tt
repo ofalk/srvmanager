@@ -1,0 +1,15 @@
+<div class="row">
+	<form action="[% h.url_for('/catdomain/query') %]" method="post" role="form">
+		<div class="col-lg-6">
+			<div class="input-group">
+				<input type="text" class="form-control" name="q" id="q" placeholder="Name" value="[% q IF q %]">
+				<div class="input-group-btn">
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="submit" tabindex="-1">Search</button>
+					</span>
+				</div>
+
+			</div>
+		</div>
+	</form>
+</div>

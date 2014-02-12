@@ -1,0 +1,13 @@
+<table class="catdomain table table-striped table-bordered table-hover table-condensed" id="catdomain">
+[% IF result %]
+	<tr>
+		<th>Field</th><th>Value</th></tr>
+	<tr>
+		<td>Name</td>
+		<td>[% result.name %]</td>
+	</tr>
+[% ELSE %]
+	<tr><th colspan="2">Nothing found.</th></tr>
+[% END %]
+	<tr><td colspan="2" class="backbutton"><a style="cursor:pointer;" onclick="javascript:window.history.back()">Back</a></td></tr>
+</table>
