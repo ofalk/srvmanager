@@ -63,4 +63,5 @@ column_names:
                 documentation_url: 'Documentation URL'
                 port_config: 'Special port configuration'
                 tags: 'Tags (space seperated list)'
-                
+        CatDomain:
+                name: 'Domain name'
