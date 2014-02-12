@@ -24,7 +24,7 @@
 		<li><a class='quiet' href='[% h.url_for('catlocations') %]'><img src='/static/images/map.png' width='20px'/>Locations</a></li>
 		<li><a class='quiet' href='[% h.url_for('catstates') %]'><img src='/static/images/tick.png'/>States</a></li>
 		<li><a class='quiet' href='[% h.url_for('catservermodels') %]'><img src='/static/images/computer.png'/>Server Models</a></li>
-		<li><a class='quiet' href='[% h.url_for('catdomains') %]'><img src='/static/images/sitemap.png'/>Domains</a></li>
+		<li><a class='quiet' href='[% h.url_for('domain') %]'><img src='/static/images/sitemap.png'/>Domains</a></li>
 		<li><a class='quiet' href='[% h.url_for('catproductcategories') %]'><img src='/static/images/user_suit.png'/>Product Categories</a></li>
 		<li><a class='quiet' href='[% h.url_for('catpatchtime') %]'><img src='/static/images/pill.png' width='20px'/>Patchtimes</a></li>
 		<li><a class='quiet' href='[% h.url_for('catsupportlevels') %]'><img src='/static/images/wrench.png'/>Supportlevels</a></li>
