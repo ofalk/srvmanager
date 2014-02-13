@@ -12,8 +12,8 @@ template:
                 - 'bootstrap.min.js'
 
 database:
-        dsn: "dbi:mysql:dbname=srvmanager;host=mysql01.beer.linux-kernel.at"
-        user: srvmanager
+        dsn: "dbi:mysql:dbname=srvmanager;host=localhost"
+        user: root
         password:
 
 lang: en
